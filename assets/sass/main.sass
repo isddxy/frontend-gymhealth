@@ -1,0 +1,170 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	margin: 0
+	padding: 0
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+h1
+	font-family: $accent-font
+	font-size: 54px
+	color: rgba(51,45,67,0.75)
+	margin: 0
+	line-height: 60px
+
+.page
+	&-main	
+		height: 100vh
+		display: block
+		//overflow: hidden
+		background-size: cover
+		.bg
+			.background
+				max-width: auto
+				min-height: 100%
+				position: absolute
+				z-index: -99
+			.mountain
+				max-width: auto
+				min-height: 100%
+				position: absolute
+				z-index: -98
+			.fitness-girl
+				left: 18%
+				top: 24%
+				position: absolute
+				z-index: -97
+
+#welcome
+	font-size: 22px
+	.container
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-template-areas: "header header" "none content" 
+		max-width: 1240px
+		margin: 0 auto
+		header
+			//outline: 1px solid red
+			display: grid
+			grid-template-columns: 224px 1fr
+			grid-area: header
+			margin-top: 80px
+			align-items: center
+			.logo
+				text-decoration: none
+				//outline: 1px solid red
+				&:hover
+					.icon
+						-webkit-transform: scale(1.2)
+						transform: scale(1.2)
+				.icon
+					//outline: 1px solid red
+					margin: 0 11px 0px 0
+					float: left
+					width: 40px
+					height: 32px
+					transition: transform .3s linear
+				.name 
+					float: left
+					padding-top: 4px
+					margin-bottom: -8px
+					//outline: 1px solid red
+					width: 173px
+			.top-menu
+				ul
+					margin: 0
+					padding: 0
+					display: grid
+					list-style: none
+					grid-template-columns: repeat(4, auto)
+					grid-gap: 90px
+					align-items: center
+					justify-content: right
+					li
+						justify-content: left
+						height: 100%
+						display: grid
+						justify-items: center
+						a
+							text-decoration: none
+							color: #7E738B
+							font-size: 22px
+							text-decoration: none
+							align-self: center
+							justify-self: center
+							line-height: 23px
+							display: block
+		.right-content
+			grid-area: content
+			margin-top: 150px
+			max-width: 600px
+			h1
+				margin-bottom: 53px
+			p
+				color: rgba(131, 126, 151, 0.83);
+			.btns-form
+				display: grid
+				grid-template-areas: "reg login"
+				grid-template-columns: 333px 1fr
+				margin: 70px 0 50px 0
+				grid-column-gap: 30px
+				.btn-start
+					grid-area: reg	
+				.btn-response
+					grid-area: login
+					justify-self: stretch
+			.btns-auth-soc
+				width: 100%
+				.title
+					text-align: center
+					font-size: 18px
+					padding: 20px
+					letter-spacing: 0.02em
+					color: rgba(92, 128, 162, 0.4)
+				ul
+					margin: 0
+					padding: 0
+					display: grid
+					list-style: none
+					grid-template-columns: repeat(4, auto)
+					grid-gap: 30px
+					align-items: center
+					justify-content: center
+
+@import "btn" // Buttons
+@import "media" // Always at the end

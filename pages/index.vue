@@ -1,27 +1,81 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        GymHealth
-      </h1>
-      <h2 class="subtitle">
-        Управляй своим тренировочным процессом
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >НАЧАТЬ БЕСЛАТНО</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >ВХОД</a>
-      </div>
-    </div>
-  </section>
+
+<body id="welcome">
+
+	<!-- Custom HTML -->
+
+	<div class="page-main">
+		<div class="bg">
+			<img class="background" src="~/assets/img/_src/bg/bg-background.svg">
+			<img class="mountain" src="~/assets/img/_src/bg/bg-mountain.svg">
+			<img class="fitness-girl" src="~/assets/img/_src/bg/fitness_girl.svg">
+		</div>
+
+		<div class="container">
+			<header>
+				<div class="logo">
+					<a href="/">
+						<div class="icon">
+								<img src="~/assets/img/_src/logo/short-logo.svg"
+								alt="GymHealth logotype">
+						</div>
+						<div class="name">
+								<img src="~/assets/img/_src/logo/gymhealth.svg"
+								alt="GymHealth logotype">
+						</div>
+					</a>
+				</div>
+
+				<nav class="top-menu">
+					<ul>
+						<li><a href="#">Тренировки</a></li>
+						<li><a href="#">Упражнения</a></li>
+						<li><a href="#">Тренера</a></li>
+						<li><a class="btn btn-top-menu" href="#">Как это работает?</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="right-content">
+				<h1>Reach your goals <br>right now</h1>
+				<p>
+					Платформа, позволяющая планировать и контролировать тренировочный процесс, следить за прогрессом, а также сном и приёмами пищи.
+				</p>
+
+				<div class="btns-form">
+					<a href="#" class="btn btn-large btn-color-accent btn-start">Начать бесплатно</a>
+					<a href="#" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</a>
+				</div>
+
+				<div class="btns-auth-soc">
+					<div class="title">Авторизоваться через</div>
+					<ul>
+						<li>
+							<a href="#" class="btn-soc btn-soc-google"><img src="~/assets/img/_src/icon/soc/google.svg"></a>
+						</li>
+						<li>
+							<a href="#" class="btn-soc btn-soc-vk"><img src="~/assets/img/_src/icon/soc/vk.svg"></a>
+						</li>
+						<li>
+							<a href="#" class="btn-soc btn-soc-facebook"><img src="~/assets/img/_src/icon/soc/facebook.svg"></a>
+						</li>
+						<li>
+							<a href="#" class="btn-soc btn-soc-twitter"><img src="~/assets/img/_src/icon/soc/twitter.svg"></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			
+		</div>
+
+		<!-- <div class="switcher-language">
+			English
+		</div> -->
+
+	</div>
+</body>
 </template>
 
 <script>
@@ -38,34 +92,5 @@ export default {
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

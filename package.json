@@ -1,5 +1,5 @@
 {
-  "name": "test-app",
+  "name": "frontend-gymhealth",
   "version": "1.0.0",
   "description": "My exceptional Nuxt.js project",
   "author": "Anton Milyaev",
@@ -17,6 +17,8 @@
     "nuxt": "^2.8.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0"
   }
 }

@@ -33,6 +33,7 @@ export default {
   ** Global CSS
   */
   css: [
+    "@/assets/sass/main.sass"
   ],
 
   /*
