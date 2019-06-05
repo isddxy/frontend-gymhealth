@@ -3,22 +3,22 @@
     <div>
       <logo />
       <h1 class="title">
-        Проверка
+        GymHealth
       </h1>
       <h2 class="subtitle">
-        My exceptional Nuxt.js project
+        Управляй своим тренировочным процессом
       </h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
           class="button--green"
-        >Documentation</a>
+        >НАЧАТЬ БЕСЛАТНО</a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey"
-        >GitHub</a>
+        >ВХОД</a>
       </div>
     </div>
   </section>
@@ -30,6 +30,9 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  head: {
+    title: 'Gymhealth 🚀'
   }
 }
 </script>
