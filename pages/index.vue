@@ -6,9 +6,9 @@
 
 	<div class="page-main">
 		<div class="bg">
-			<img class="background" src="~/assets/img/_src/bg/bg-background.svg">
-			<img class="mountain" src="~/assets/img/_src/bg/bg-mountain.svg">
-			<img class="fitness-girl" src="~/assets/img/_src/bg/fitness_girl.svg">
+			<img class="background" src="~/static/img/_src/bg/bg-background.svg">
+			<img class="mountain" src="~/static/img/_src/bg/bg-mountain.svg">
+			<img class="fitness-girl" src="~/static/img/_src/bg/fitness_girl.svg">
 		</div>
 
 		<div class="container">
@@ -16,11 +16,11 @@
 				<div class="logo">
 					<a href="/">
 						<div class="icon">
-								<img src="~/assets/img/_src/logo/short-logo.svg"
+								<img src="~/static/img/_src/logo/short-logo.svg"
 								alt="GymHealth logotype">
 						</div>
 						<div class="name">
-								<img src="~/assets/img/_src/logo/gymhealth.svg"
+								<img src="~/static/img/_src/logo/gymhealth.svg"
 								alt="GymHealth logotype">
 						</div>
 					</a>
@@ -51,16 +51,16 @@
 					<div class="title">Авторизоваться через</div>
 					<ul>
 						<li>
-							<a href="#" class="btn-soc btn-soc-google"><img src="~/assets/img/_src/icon/soc/google.svg"></a>
+							<a href="#" class="btn-soc btn-soc-google"><img src="~/static/img/_src/icon/soc/google.svg"></a>
 						</li>
 						<li>
-							<a href="#" class="btn-soc btn-soc-vk"><img src="~/assets/img/_src/icon/soc/vk.svg"></a>
+							<a href="#" class="btn-soc btn-soc-vk"><img src="~/static/img/_src/icon/soc/vk.svg"></a>
 						</li>
 						<li>
-							<a href="#" class="btn-soc btn-soc-facebook"><img src="~/assets/img/_src/icon/soc/facebook.svg"></a>
+							<a href="#" class="btn-soc btn-soc-facebook"><img src="~/static/img/_src/icon/soc/facebook.svg"></a>
 						</li>
 						<li>
-							<a href="#" class="btn-soc btn-soc-twitter"><img src="~/assets/img/_src/icon/soc/twitter.svg"></a>
+							<a href="#" class="btn-soc btn-soc-twitter"><img src="~/static/img/_src/icon/soc/twitter.svg"></a>
 						</li>
 					</ul>
 				</div>
