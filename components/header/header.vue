@@ -1,19 +1,19 @@
 <template>
     <header>
         <Logo></Logo>
-        <top_nav_menu></top_nav_menu>
+        <nav_menu></nav_menu>
     </header>
 </template>
 
 
 <script>
 import Logo from '~/components/header/items/Logo.vue'
-import top_nav_menu from '~/components/header/items/top_nav_menu.vue'
+import nav_menu from '~/components/header/items/nav_menu.vue'
 
 export default {
   components: {
     Logo,
-    top_nav_menu
+    nav_menu
   }
 }
 </script>
