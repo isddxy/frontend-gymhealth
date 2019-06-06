@@ -4,6 +4,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   transition (to, from) {
@@ -14,5 +15,4 @@ export default {
 </script>
 
 <style>
-
 </style>
