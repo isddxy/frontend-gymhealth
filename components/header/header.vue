@@ -1,7 +1,7 @@
 <template>
     <header>
-        <Logo/>
-        <top_nav_menu/>
+        <Logo></Logo>
+        <top_nav_menu></top_nav_menu>
     </header>
 </template>
 

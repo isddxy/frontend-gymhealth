@@ -9,7 +9,7 @@
       </div>
 
       <div class="container">
-        <AppHeader/>
+        <AppHeader></AppHeader>
 
         <div class="right-content">
           <h1>Reach your goals <br>right now</h1>

@@ -7,7 +7,7 @@
       </div>
 
       <div class="container">
-        <AppHeader/>
+        <AppHeader></AppHeader>
 
         <nuxt />
 
