@@ -2,7 +2,7 @@
   <div>
     <div class="right-content">
       <h1>Давайте начнём</h1>
-      <nuxt-link to="/sign-in" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
+      <nuxt-link to="/start/sign-in" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
     </div>
   </div>
 </template>

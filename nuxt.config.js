@@ -36,18 +36,28 @@ export default {
     "@/assets/sass/main.sass"
   ],
 
+
+  router: {
+    middleware: [
+      "clearValidationErrors"
+    ]
+  },
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    //"~/plugins/vue-input-ui"
+    '~/plugins/mixins/user.js',
+    '~/plugins/mixins/validation.js',
+    '~/plugins/axios.js'
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
-    "@nuxtjs/axios",
     //['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
+    "@nuxtjs/axios",
     "@nuxtjs/auth"
   ],
 
@@ -59,14 +69,29 @@ export default {
     strategies: {
       local: {
         endpoints: {
-          login: { url: '/login', method: 'post', propertyName: 'meta.token' },
-          user: { url: '/user', method: 'get', propertyName: 'data' },
-          logout: { url: '/logout', method: 'post' }
+          login: {
+            url: '/login',
+            method: 'post',
+            propertyName: 'meta.token'
+          },
+          user: {
+            url: '/user',
+            method: 'get',
+            propertyName: 'data'
+          },
+          logout: {
+            url: '/logout',
+            method: 'post'
+          }
         },
         // tokenRequired: true,
         // tokenType: 'bearer'
-      }
-    }
+      },
+    },
+    redirect: {
+      login: "/start/sign-in",
+      home: false
+    },
   },
 
   /*
@@ -76,6 +101,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    //vendor: ['vue-input-ui'],
     extend(config, ctx) {
     }
   }

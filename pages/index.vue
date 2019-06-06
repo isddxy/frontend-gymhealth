@@ -18,8 +18,8 @@
           </p>
 
           <div class="btns-form">
-            <nuxt-link to="/lets-start" class="btn btn-large btn-color-accent btn-start">Начать бесплатно</nuxt-link>
-            <nuxt-link to="/sign-in" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
+            <nuxt-link to="/start/sign-up" class="btn btn-large btn-color-accent btn-start">Начать бесплатно</nuxt-link>
+            <nuxt-link to="/start/sign-in" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
           </div>
 
           <div class="btns-auth-soc">

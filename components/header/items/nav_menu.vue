@@ -4,10 +4,28 @@
             <li><a href="#">Тренировки</a></li>
             <li><a href="#">Упражнения</a></li>
             <li><a href="#">Тренера</a></li>
-            <li><nuxt-link to="/about" class="btn btn-top-menu">Как это работает?</nuxt-link></li>
+            <template v-if="!authenticated">
+                <li><nuxt-link to="/start/about" class="btn btn-top-menu">Как это работает?</nuxt-link></li>
+            </template>
+            <template v-if="authenticated">
+                <li><nuxt-link to="/profile" class="btn btn-top-menu">{{ user.name }}</nuxt-link></li>
+            </template>
         </ul>
     </nav>
 </template>
+
+<script>
+import {mapGetters} from 'vuex'
+
+export default {
+    computed: {
+        ...mapGetters({
+            loggedIn: "auth/authenticated"
+        })
+    }    
+}
+</script>
+
 
 <style lang="sass" scoped>
 .top-menu
