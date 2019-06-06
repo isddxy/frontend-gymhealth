@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxtjs/auth": "^4.6.5",
     "@nuxtjs/axios": "^5.5.3",
+    "@nuxtjs/component-cache": "^1.1.5",
     "cross-env": "^5.2.0",
     "nuxt": "^2.8.0"
   },
