@@ -1,7 +1,6 @@
 @import "vars"
 @import "fonts"
 @import "libs"
-@import "page-anim"
 
 
 ::placeholder
@@ -80,57 +79,6 @@ h1
 		grid-template-areas: "header header" "none content"
 		max-width: 1240px
 		margin: 0 auto
-		header
-			//outline: 1px solid red
-			display: grid
-			grid-template-columns: 224px 1fr
-			grid-area: header
-			margin-top: 80px
-			align-items: center
-			.logo
-				text-decoration: none
-				//outline: 1px solid red
-				&:hover
-					.icon
-						-webkit-transform: scale(1.2)
-						transform: scale(1.2)
-				.icon
-					//outline: 1px solid red
-					margin: 0 11px 0px 0
-					float: left
-					width: 40px
-					height: 32px
-					transition: transform .3s linear
-				.name
-					float: left
-					padding-top: 4px
-					margin-bottom: -8px
-					//outline: 1px solid red
-					width: 173px
-			.top-menu
-				ul
-					margin: 0
-					padding: 0
-					display: grid
-					list-style: none
-					grid-template-columns: repeat(4, auto)
-					grid-gap: 90px
-					align-items: center
-					justify-content: right
-					li
-						justify-content: left
-						height: 100%
-						display: grid
-						justify-items: center
-						a
-							text-decoration: none
-							color: #7E738B
-							font-size: 22px
-							text-decoration: none
-							align-self: center
-							justify-self: center
-							line-height: 23px
-							display: block
 		.right-content
 			grid-area: content
 			margin-top: 150px
@@ -168,5 +116,8 @@ h1
 					align-items: center
 					justify-content: center
 
+
+@import "page-anim"
+@import "inputs"	
 @import "btn" // Buttons
 @import "media" // Always at the end
