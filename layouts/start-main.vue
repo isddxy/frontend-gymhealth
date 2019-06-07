@@ -11,6 +11,9 @@
 
         <nuxt />
 
+        <div class="footer">
+          <AppLangswitcher />
+        </div>
 
       </div>
 
@@ -20,10 +23,12 @@
 
 <script>
 import AppHeader from '~/components/header/header.vue'
+import AppLangswitcher from '~/components/languageSwitcher.vue'
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppLangswitcher
   },
   transition (to, from) {
     if (!from) return 'slide-left'

@@ -45,9 +45,10 @@
 
       </div>
 
-      <!-- <div class="switcher-language">
-        English
-      </div> -->
+      <div class="footer">
+        <AppLangswitcher />
+      </div>
+
 
     </div>
   </div>
