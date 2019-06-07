@@ -49,7 +49,8 @@ export default {
     //"~/plugins/vue-input-ui"
     '~/plugins/mixins/user.js',
     '~/plugins/mixins/validation.js',
-    '~/plugins/axios.js'
+    '~/plugins/axios.js',
+    '~plugins/i18n.js'
   ],
 
   /*
@@ -58,7 +59,23 @@ export default {
   modules: [
     //['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
     "@nuxtjs/axios",
-    "@nuxtjs/auth"
+    "@nuxtjs/auth",
+    ['nuxt-i18n',{
+      locales: [
+        {code: "en", iso: 'en-US', file: "en.js"},
+        {code: "ru", iso: 'ru-RU', file: "ru.js"}
+      ],
+      lazy: true,
+      defaultLocale: "en",
+      langDir: "assets/i18n/",
+      vueI18n: {
+        fallbackLocale: "en"
+      },
+      strategy: 'prefix_except_default',
+      defaultLocale: 'en',
+      pages: {},
+      parsePages: false
+    }]
   ],
 
   axios: {

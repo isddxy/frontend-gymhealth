@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <nuxt-link to="/">
+    <nuxt-link :to="localePath('index')">
       <div class="icon">
           <img src="~/static/assets/img/_src/logo/short-logo.svg"
           alt="GymHealth logotype">

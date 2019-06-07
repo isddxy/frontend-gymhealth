@@ -12,18 +12,18 @@
         <AppHeader></AppHeader>
 
         <div class="content-right">
-          <h1>Reach your goals <br>right now</h1>
+          <h1>{{ $t('welcome.main_title') }}</h1>
           <p>
-            Платформа, позволяющая планировать и контролировать тренировочный процесс, следить за прогрессом, а также сном и приёмами пищи.
+            {{ $t('welcome.main_text') }}
           </p>
 
           <div class="btns-form">
-            <nuxt-link to="/start/sign-up" class="btn btn-large btn-color-accent btn-start">Начать бесплатно</nuxt-link>
-            <nuxt-link to="/start/sign-in" class="btn btn-large btn-color-empty-border-gray">Войти</nuxt-link>
+            <nuxt-link :to="localePath('start-sign-up')" class="btn btn-large btn-color-accent btn-start">{{ $t('auth.get_start_free') }}</nuxt-link>
+            <nuxt-link :to="localePath('start-sign-in')" class="btn btn-large btn-color-empty-border-gray">{{ $t('auth.sign_in') }}</nuxt-link>
           </div>
 
           <div class="btns-auth-soc">
-            <div class="title">Авторизоваться через</div>
+            <div class="title">{{ $t('auth.login_with') }}</div>
             <ul>
               <li>
                 <a href="#" class="btn-soc btn-soc-google"><img src="~/static/assets/img/_src/icon/soc/google.svg"></a>
@@ -58,6 +58,7 @@
 import AppHeader from '~/components/header/header.vue'
 
 export default {
+  i18n: false,
   layout: 'start',
   components: {
     AppHeader

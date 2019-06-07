@@ -4,7 +4,7 @@
         <h1>Профиль {{ user.name }}</h1>
         <h3>Ваш email: {{ user.email }}</h3>
        
-        <a class="btn btn-top-menu" @click.prevent="logout">Выйти</a>
+        <a class="btn btn-top-menu" @click.prevent="logout">{{ $t('auth.logout') }}</a>
 
       </div>
   </div>

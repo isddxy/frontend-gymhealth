@@ -7,7 +7,7 @@
         <br>
         And while it certainly is the case that most things run more reliably and less expensively in the cloud, Internet of Things (IoT) technology and use cases have changed the cloud-only mentality (or, at least, changed the meaning of “cloud”). By definition, a workload running on a thing cannot run in the cloud. But also, it clearly must run in conjunction with the cloud. Does the thing connect to the cloud or does the cloud extend to the thing?
       </p>
-      <nuxt-link to="/start/sign-in" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
+      <nuxt-link :to="localePath('start-sign-in')" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
     </div>
   </div>
 </template>

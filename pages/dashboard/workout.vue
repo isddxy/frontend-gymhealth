@@ -1,9 +1,8 @@
 <template>
   <div>
     <div class="right-content">
-      <h1>Панель управления</h1>
+      <h1>Тренировки</h1>
       <p>Пока пусто. Описание появится позже</p>
-       <nuxt-link :to="localePath('dashboard-workout')">Тренировки</nuxt-link>
     </div>
   </div>
 </template>
@@ -13,7 +12,7 @@ export default {
   layout: 'start-main',
   middleware: ['auth'],
   head: {
-    title: 'Dashboard'
+    title: 'Тренировки'
   }
 }
 </script>

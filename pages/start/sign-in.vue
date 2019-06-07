@@ -1,21 +1,21 @@
 <template>
   <div>
     <div class="content-full">
-      <h1>Sign In</h1>
+      <h1>{{ $t('auth.sign_in') }}</h1>
       <form @submit.prevent="submit">
         <div class="form-group">
-          <label>Логин или Email</label>
+          <label>{{ $t('auth.login_or_email') }}</label>
           <input v-model.trim="form.email" type="email" class="form-control" placeholder="Email" autofocus>
           <small class="form-text text-danger" v-if="errors.email">{{ errors.email[0] }}</small>
         </div>
         <div class="form-group">
-          <label>Пароль</label>
+          <label>{{ $t('auth.password') }}</label>
           <input v-model.trim="form.password" type="password" class="form-control" placeholder="Ваш пароль">
           <small class="form-text text-danger" v-if="errors.password">{{ errors.password[0] }}</small>
         </div>
-        <button type="submit" class="btn btn-large btn-color-accent btn-start btn-response btn-submit">Войти</button>
+        <button type="submit" class="btn btn-large btn-color-accent btn-start btn-response btn-submit">{{ $t('auth.sign_in') }}</button>
         <hr>
-        <nuxt-link to="/start/sign-up" class="btn btn-top-menu btn-response">У меня нет аккаунта</nuxt-link>
+        <nuxt-link :to="localePath('start-sign-up')" class="btn btn-top-menu btn-response">{{ $t('auth.i_no_account') }}</nuxt-link>
       </form>
     </div>
   </div>

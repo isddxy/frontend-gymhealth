@@ -1,14 +1,14 @@
 <template>
     <nav class="top-menu">
         <ul>
-            <li><a href="#">Тренировки</a></li>
-            <li><a href="#">Упражнения</a></li>
-            <li><a href="#">Тренера</a></li>
+            <li><a href="#">{{ $t('common.workouts') }}</a></li>
+            <li><a href="#">{{ $t('common.exercises') }}</a></li>
+            <li><nuxt-link :to="localePath('index')">{{ $t('common.trainers') }}</nuxt-link></li>
             <template v-if="!authenticated">
-                <li><nuxt-link to="/start/about" class="btn btn-top-menu">Как это работает?</nuxt-link></li>
+                <li><nuxt-link :to="localePath('start-about')" class="btn btn-top-menu">{{ $t('common.how_work') }}</nuxt-link></li>
             </template>
             <template v-if="authenticated">
-                <li><nuxt-link to="/profile" class="btn btn-top-menu">{{ user.name }}</nuxt-link></li>
+                <li><nuxt-link :to="localePath('profile')" class="btn btn-top-menu">{{ user.name }}</nuxt-link></li>
             </template>
         </ul>
     </nav>
