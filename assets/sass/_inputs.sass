@@ -27,6 +27,12 @@
             color: rgba(152,147,168,0.75)
         &::-moz-placeholder
             color: rgba(152,147,168,0.75)
+        &:focus
+            &::placeholder
+                color: rgba(152,147,168,0.25)
+        &:hover
+            &::placeholder
+                color: rgba(179,124,160,0.75)
         // chrome autocomplite
         &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active
             -webkit-box-shadow: 0 0 0 90px rgba(243,94,174,0.06) inset !important
