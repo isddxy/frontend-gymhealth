@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="right-content">
+    <div class="content-full">
         <h1>Регистрация</h1>
         <form @submit.prevent="submit">
             <div class="form-group">
@@ -18,8 +18,11 @@
                 <input v-model.trim="form.password" type="password" class="form-control" placeholder="Ваш пароль">
                 <small class="form-text text-danger" v-if="errors.password">{{ errors.password[0] }}</small>
             </div>
-            <button type="submit" class="btn btn-primary">Регистрация</button>
+            <button type="submit" class="btn btn-large btn-color-accent btn-start btn-response btn-submit">Регистрация</button>
+            <hr>
+            <nuxt-link to="/start/sign-in" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
       </form>
+          
 
       </div>
   </div>

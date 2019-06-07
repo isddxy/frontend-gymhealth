@@ -11,7 +11,7 @@
       <div class="container">
         <AppHeader></AppHeader>
 
-        <div class="right-content">
+        <div class="content-right">
           <h1>Reach your goals <br>right now</h1>
           <p>
             Платформа, позволяющая планировать и контролировать тренировочный процесс, следить за прогрессом, а также сном и приёмами пищи.
@@ -19,7 +19,7 @@
 
           <div class="btns-form">
             <nuxt-link to="/start/sign-up" class="btn btn-large btn-color-accent btn-start">Начать бесплатно</nuxt-link>
-            <nuxt-link to="/start/sign-in" class="btn btn-large btn-color-empty-border-gray btn-response">Войти</nuxt-link>
+            <nuxt-link to="/start/sign-in" class="btn btn-large btn-color-empty-border-gray">Войти</nuxt-link>
           </div>
 
           <div class="btns-auth-soc">

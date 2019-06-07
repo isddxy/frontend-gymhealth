@@ -23,6 +23,6 @@ header
     display: grid
     grid-template-columns: 224px 1fr
     grid-area: header
-    margin-top: 80px
+    padding-top: 80px
     align-items: center
 </style>

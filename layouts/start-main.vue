@@ -6,7 +6,7 @@
         <img class="background" src="~/static/assets/img/_src/bg/bg-background.svg">
       </div>
 
-      <div class="container">
+      <div class="container-only-page">
         <AppHeader></AppHeader>
 
         <nuxt />
@@ -33,5 +33,8 @@ export default {
 </script>
 
 
-<style>
+<style lang="sass">
+body
+	height: 100vh
+	overflow: hidden 
 </style>

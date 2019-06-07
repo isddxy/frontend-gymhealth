@@ -9,7 +9,6 @@
 ::selection
 	background-color: $accent
 	color: #fff
-
 body
 	font-size: 16px
 	min-width: 320px
@@ -35,6 +34,14 @@ body
 	&.img-width
 		width: 100%
 
+hr
+	border: 0
+	height: 2px
+	background: rgba(139, 106, 168, 0.22)
+	border-radius: 99px
+	margin: 40px 20px
+
+
 .text-center
 	text-align: center
 
@@ -54,6 +61,8 @@ h1
 		display: block
 		//overflow: hidden
 		background-size: cover
+		outline: 1px solid green
+		overflow: hidden
 		.bg
 			.background
 				max-width: auto
@@ -75,46 +84,57 @@ h1
 	font-size: 22px
 	.container
 		display: grid
-		grid-template-columns: 1fr 1fr
+		grid-template-columns: 1fr
 		grid-template-areas: "header header" "none content"
 		max-width: 1240px
 		margin: 0 auto
-		.right-content
-			grid-area: content
-			margin-top: 150px
-			max-width: 600px
-			h1
-				margin-bottom: 53px
-			p
-				color: rgba(131, 126, 151, 0.83);
-			.btns-form
+		&-only-page
+			height: 100%
+			max-width: 1240px
+			margin: 0 auto
+			
+.content
+	&-full
+		//outline: 1px solid green
+		height: 100%
+		padding: 60px
+		text-align: center
+	&-right
+		grid-area: content
+		margin-top: 150px
+		max-width: 600px
+		h1
+			margin-bottom: 53px
+		p
+			color: rgba(131, 126, 151, 0.83);
+		.btns-form
+			display: grid
+			grid-template-areas: "reg login"
+			grid-template-columns: 333px 1fr
+			margin: 70px 0 50px 0
+			grid-column-gap: 30px
+			.btn-start
+				grid-area: reg
+			.btn-response
+				grid-area: login
+				justify-self: stretch
+		.btns-auth-soc
+			width: 100%
+			.title
+				text-align: center
+				font-size: 18px
+				padding: 20px
+				letter-spacing: 0.02em
+				color: rgba(92, 128, 162, 0.4)
+			ul
+				margin: 0
+				padding: 0
 				display: grid
-				grid-template-areas: "reg login"
-				grid-template-columns: 333px 1fr
-				margin: 70px 0 50px 0
-				grid-column-gap: 30px
-				.btn-start
-					grid-area: reg
-				.btn-response
-					grid-area: login
-					justify-self: stretch
-			.btns-auth-soc
-				width: 100%
-				.title
-					text-align: center
-					font-size: 18px
-					padding: 20px
-					letter-spacing: 0.02em
-					color: rgba(92, 128, 162, 0.4)
-				ul
-					margin: 0
-					padding: 0
-					display: grid
-					list-style: none
-					grid-template-columns: repeat(4, auto)
-					grid-gap: 30px
-					align-items: center
-					justify-content: center
+				list-style: none
+				grid-template-columns: repeat(4, auto)
+				grid-gap: 30px
+				align-items: center
+				justify-content: center
 
 
 @import "page-anim"
