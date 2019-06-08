@@ -79,9 +79,16 @@ export default {
         fallbackLocale: "en"
       },
       strategy: 'prefix_except_default',
-      defaultLocale: 'en',
       pages: {},
-      parsePages: false
+      parsePages: false,
+      detectBrowserLanguage: {
+        // If enabled, a cookie is set once a user has been redirected to his
+        // preferred language to prevent subsequent redirections
+        // Set to false to redirect every time
+        useCookie: true,
+        // Cookie name
+        cookieKey: 'i18n_redirected'
+      },
     }]
   ],
 
