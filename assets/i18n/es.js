@@ -9,7 +9,7 @@ export default {
         password: "Contraseña",
         i_no_account: "Tengo una cuenta",
         full_name: "nombre Completo",
-        full_name_test: "Иван Иванов",
+        full_name_test: "Pablo Fernández",
         email_test: "example@email.ru",
         create_account: "Crear cuenta",
         sign_in: "iniciar Sesión",
