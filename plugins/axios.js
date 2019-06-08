@@ -1,4 +1,4 @@
-export default function({ $axios, store, redirect }) {
+export default function({$axios, store, redirect }) {
 	$axios.onError(error => {
 		if (error.response.status === 422) {
 			store.dispatch("validation/setErrors", error.response.data.errors);
@@ -10,4 +10,5 @@ export default function({ $axios, store, redirect }) {
 	$axios.onRequest(() => {
 		store.dispatch("validation/clearErrors");
 	});
+
 }

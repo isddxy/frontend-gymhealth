@@ -38,6 +38,8 @@ export default {
 
       let l_lang = this.$i18n.locale;
 
+      this.$axios.defaults.headers.common['localization'] = this.$i18n.locale;
+
       this.$i18n.locales.filter(function (lang) {
         if (lang.code == l_lang) {
           languge.code = lang.code

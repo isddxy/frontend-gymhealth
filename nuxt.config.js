@@ -93,8 +93,9 @@ export default {
   ],
 
   axios: {
-    baseURL: "https://api.gymhealth.org/api"
+    baseURL: "https://api.gymhealth.org/api",
   },
+  
 
   auth: {
     strategies: {

@@ -38,6 +38,10 @@ export default {
       
       try {
 
+        var config = {
+            headers: {'X-localization': this.$i18n.locale}
+        };
+
         await this.$auth.loginWith("local", {
           data: this.form
         });
