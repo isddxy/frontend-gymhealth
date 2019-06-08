@@ -13,15 +13,6 @@
       </nuxt-link>
     </ul>
 
-    <!-- <ul class="select-lang">
-      <nuxt-link  v-for="lang in languages" :to="switchLocalePath(lang.id)" class="language" :key="lang.id" @click="changeLang(lang.name)">
-      <li @click="changeLang( lang.id, lang.name, lang.img )">
-        <img class="flag" :src="lang.img">
-        <span class="name">{{ lang.name }}</span>
-      </li>
-      </nuxt-link>
-    </ul> -->
-
     <div class="active">
       <img class="flag flag-active" :src="'/assets/img/_src/icon/flags/' + langNow.code + '.svg'">
       <span class="name">{{ langNow.name }}</span>
