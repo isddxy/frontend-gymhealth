@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     async submit() {
-      
+
       try {
 
         var config = {
@@ -47,7 +47,7 @@ export default {
         });
 
         this.$router.push({
-          path: this.$route.query.redirect || "/dashboard"
+          path: this.$route.query.redirect || "/" + this.$i18n.locale + "/my"
         })
 
       } catch (e) {

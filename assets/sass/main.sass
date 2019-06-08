@@ -15,7 +15,6 @@ body
 	position: relative
 	line-height: 1.5
 	font-family: $default-font
-	overflow-x: hidden
 	color: $text
 	margin: 0
 	padding: 0
@@ -57,12 +56,8 @@ h1
 
 .page
 	&-main
-		height: 100vh
-		display: block
 		//overflow: hidden
-		background-size: cover
-		outline: 1px solid green
-		overflow: hidden
+		//outline: 1px solid green
 		.bg
 			.background
 				max-width: auto
@@ -92,7 +87,7 @@ h1
 			height: 100%
 			max-width: 1240px
 			margin: 0 auto
-			
+
 .content
 	&-full
 		//outline: 1px solid green
@@ -143,6 +138,6 @@ h1
 
 
 @import "page-anim"
-@import "inputs"	
+@import "inputs"
 @import "btn" // Buttons
 @import "media" // Always at the end

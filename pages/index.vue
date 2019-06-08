@@ -41,7 +41,7 @@
           </div>
 
         </div>
-        
+
       <div class="footer">
         <AppLangswitcher />
       </div>
@@ -61,6 +61,7 @@ import AppLangswitcher from '~/components/languageSwitcher.vue'
 
 export default {
   layout: 'start',
+  middleware: ['guest'],
   components: {
     AppHeader,
     AppLangswitcher

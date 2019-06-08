@@ -33,7 +33,8 @@ export default {
   ** Global CSS
   */
   css: [
-    "@/assets/sass/main.sass"
+    "@/assets/sass/main.sass",
+    "@/assets/scss/app.scss"
   ],
 
 
@@ -95,7 +96,7 @@ export default {
   axios: {
     baseURL: "https://api.gymhealth.org/api",
   },
-  
+
 
   auth: {
     strategies: {

@@ -22,6 +22,20 @@ export default {
         exercises: 'Exercise',
         trainers: 'Trainers',
         how_work: 'How it works?',
+        search: "Search",
+    },
+    sidebar: {
+      dashboard: "Dashboard",
+      plan: "Event plan",
+      workouts: "Workouts",
+      body_size: "Body Size",
+      meal: "Mealtime",
+      stat: "Statistic"
+    },
+    topNav: {
+      workouts: "Workouts",
+      meals: "Meals",
+      trainers: "Trainers",
+      muscles: "Muscles"
     }
 }
-  

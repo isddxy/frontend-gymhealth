@@ -1,0 +1,26 @@
+.btn {
+  border-radius: 99px;
+  font-size: 0.789em; // 15px;
+  letter-spacing: 0.074em; //1.4px
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.100em 2.300em; // 19px 40px;
+  &-color {
+    &-red {
+      color: #fff;
+      background: $gradient-red;
+      &:hover {
+        box-shadow: 0 6px 25px 0 rgba(235, 127, 127, 0.28);
+        background: $gradient-red-hover;
+      }
+    }
+    &-white-blue {
+      color: #bdd5e5;
+      background: #f3faff;
+      &:hover {
+        color: darken(#bdd5e5, 14%);
+        background: darken(#f3faff, 4%);
+      }
+    }
+  }
+}

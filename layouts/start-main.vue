@@ -39,7 +39,4 @@ export default {
 
 
 <style lang="sass">
-body
-	height: 100vh
-	overflow: hidden 
 </style>

@@ -1,0 +1,92 @@
+@media all and (max-width: 1540px) {
+  body {
+    font-size: $font_size_shd;
+  }
+
+  .grid-wrapper {
+    max-width: 1400px;
+  }
+}
+
+@media all and (max-width: 1480px) {
+  body {
+    font-size: $font_size_hd;
+  }
+
+  .grid-wrapper {
+    max-width: 1200px;
+    padding: 0 16px;
+  }
+
+  .sidebar {
+    margin-left: 16px;
+  }
+}
+
+// Минус с топа отступ
+
+@media all and (max-width: 1200px) {
+  .wrapper-header {
+    margin-top: 1.684em;
+  }
+
+  .sidebar {
+    margin-top: 2.184em;
+  }
+}
+
+
+// SHORT SIDEBAR
+
+@media all and (max-width: 1030px) {
+  .grid-wrapper {
+    max-width: 950px;
+    grid-template-columns: 70px 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0 20px;
+  }
+
+  .wrapper-header {
+    ul.top-menu {
+      align-items: center;
+      justify-content: left;
+    }
+  }
+
+  .sidebar {
+    margin-left: 20px;
+    .logo {
+      .name {
+        display: none;
+      }
+    }
+    ul.menu {
+      margin-top: 30px;
+      padding: 0;
+        li {
+          list-style: none;
+          padding: 0;
+          margin-bottom: 14px;
+          a {
+            width: auto;
+            grid-template-columns: 1fr;
+            padding-right: 0.368em; // 7px;
+            .name {
+              display: none;
+            }
+          }
+        }
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .wrapper-header {
+      ul.top-menu {
+        display: none;
+      }
+    }
+  }
+
+
+
+}
