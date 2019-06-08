@@ -22,7 +22,7 @@
             <hr>
             <nuxt-link :to="localePath('start-sign-in')" class="btn btn-large btn-color-empty-border-gray btn-response">{{ $t('auth.sign_in') }}</nuxt-link>
       </form>
-          
+
 
       </div>
   </div>
@@ -33,7 +33,7 @@ export default {
     layout: 'start-main',
     middleware: ['guest'],
     components: {
-    
+
     },
     data () {
         return {
@@ -58,15 +58,15 @@ export default {
             })
 
             this.$router.push({
-                path: this.$route.query.redirect || "/dashboard"
+                path: this.$route.query.redirect || "/ru/my"
             })
 
         } catch (e) {
 
             return true;
-            
+
         }
-        
+
         },
     },
 };
