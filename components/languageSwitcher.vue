@@ -2,18 +2,30 @@
   <div class="lang">
 
     <ul class="select-lang">
-      <nuxt-link  v-for="lang in languages" :to="switchLocalePath(lang.id)" class="language" :key="lang.id" @click="changeLang(lang.id)">
-      <li>
+      <nuxt-link class="language"
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)">
+        <li>
+          <img class="flag" :src="'/assets/img/_src/icon/flags/' + locale.code + '.svg'">
+          <span class="name">{{ locale.name }}</span>
+        </li>
+      </nuxt-link>
+    </ul>
+
+    <!-- <ul class="select-lang">
+      <nuxt-link  v-for="lang in languages" :to="switchLocalePath(lang.id)" class="language" :key="lang.id" @click="changeLang(lang.name)">
+      <li @click="changeLang( lang.id, lang.name, lang.img )">
         <img class="flag" :src="lang.img">
         <span class="name">{{ lang.name }}</span>
       </li>
       </nuxt-link>
-    </ul>
+    </ul> -->
 
     <div class="active">
-      <img class="flag flag-active" :src="langnow.img">
-      <span class="name" :key="langnow.id">{{ langnow.name }}</span>
-      <img class="arrow" src="~/static/assets/img/_src/icon/flags/arrow.svg">
+      <img class="flag flag-active" :src="'/assets/img/_src/icon/flags/' + langNow.code + '.svg'">
+      <span class="name">{{ langNow.name }}</span>
+      <img class="arrow" src="/assets/img/_src/icon/flags/arrow.svg">
     </div>
 
   </div>
@@ -23,57 +35,40 @@
 export default {
   name: 'AppLangswitcher',
   data: () => ({
-    langnow: {
-      id: 'ru',
-      name: 'Русский',
-      img: '/assets/img/_src/icon/flags/ru.svg',
-    },
-    languages: [
-      {
-        id: 'ru',
-        name: 'Русский',
-        img: '/assets/img/_src/icon/flags/ru.svg',
-      },
-      {
-        'id' : 'es',
-        'name' : 'Español',
-        'img' : '/assets/img/_src/icon/flags/es.svg'
-      },
-      {
-        'id' : 'pt',
-        'name' : 'Portugal',
-        'img' : '/assets/img/_src/icon/flags/pt.svg'
-      },
-      {
-        'id' : 'fr',
-        'name' : 'France',
-        'img' : '/assets/img/_src/icon/flags/fr.svg'
-      },
-      {
-        'id' : 'zh',
-        'name' : '中国',
-        'img' : '/assets/img/_src/icon/flags/zh.svg'
-      },
-      {
-        'id' : 'en',
-        'name' : 'English',
-        'img' : '/assets/img/_src/icon/flags/us.svg'
-      },
-    ]
+
   }),
   computed: {
+    langNow() {
+
+      let languge = {
+        code: 'ru',
+        name: 'Englishas'
+      }
+
+      let l_lang = this.$i18n.locale;
+
+      this.$i18n.locales.filter(function (lang) {
+        if (lang.code == l_lang) {
+          languge.code = lang.code
+          languge.name = lang.name
+          return languge
+        }
+      })
+          
+      return languge
+
+    },
+
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+    
   },
   methods: {
-    changeLang: function(lang) {
-      this.languages.forEach(function(value) {
-        if( lang == value.id ) {
-          console.log(this.langnow.id);
-          // langnow.id = value.id;
-          // langnow.name = value.name;
-          // langnow.img = value.img;
-        }
-      });
-
+    changeLang: function(langId, langName, langImg) {
+      this.langnow.id = langId
+      this.langnow.name = langName
+      this.langnow.img = langImg
     }
   }
 }
@@ -126,6 +121,7 @@ export default {
         justify-self: left
         grid-area: 'name'
         opacity: 0.8
+        min-width: 80px
       &:first-child:hover
         border-radius: 10px 10px 0 0
       &:hover

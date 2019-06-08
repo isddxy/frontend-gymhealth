@@ -56,12 +56,14 @@
 
 <script>
 import AppHeader from '~/components/header/header.vue'
+import AppLangswitcher from '~/components/languageSwitcher.vue'
 
 export default {
   i18n: false,
   layout: 'start',
   components: {
-    AppHeader
+    AppHeader,
+    AppLangswitcher
   },
   head: {
     title: 'Gymhealth 🚀'
