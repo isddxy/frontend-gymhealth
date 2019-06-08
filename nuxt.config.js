@@ -71,6 +71,7 @@ export default {
         {code: "pt", iso: 'pt-PT', file: "pt.js", name: 'Portugal'},
         {code: "es", iso: 'es-ES', file: "es.js", name: 'Español'},
       ],
+      baseUrl: 'https://gymhealth.org',
       lazy: true,
       defaultLocale: "en",
       langDir: "assets/i18n/",
