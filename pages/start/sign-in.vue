@@ -46,9 +46,15 @@ export default {
           data: this.form
         });
 
-        this.$router.push({
-          path: this.$route.query.redirect || "/" + this.$i18n.locale + "/my"
-        })
+        if (!this.$i18n.locale == 'en') {
+          this.$router.push({
+              path: this.$route.query.redirect || "/" + this.$i18n.locale + "/my"
+          })
+        } else {
+          this.$router.push({
+              path: this.$route.query.redirect || "/my"
+          })
+        }
 
       } catch (e) {
 
