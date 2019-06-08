@@ -62,14 +62,14 @@ export default {
     "@nuxtjs/auth",
     ['nuxt-i18n',{
       locales: [
-        {code: "en", iso: 'en-US', file: "en.js", name: 'English'},
-        {code: "ru", iso: 'ru-RU', file: "ru.js", name: 'Русский'},
         {code: "zh", iso: 'zh-CN', file: "zh.js", name: '中国  '},
         {code: "jp", iso: 'jp-JP', file: "jp.js", name: '日本語'},
         {code: "de", iso: 'de-DE', file: "de.js", name: 'Deutsch'},
         {code: "fr", iso: 'fr-FR', file: "fr.js", name: 'France'},
         {code: "pt", iso: 'pt-PT', file: "pt.js", name: 'Portugal'},
         {code: "es", iso: 'es-ES', file: "es.js", name: 'Español'},
+        {code: "ru", iso: 'ru-RU', file: "ru.js", name: 'Русский'},
+        {code: "en", iso: 'en-US', file: "en.js", name: 'English'},
       ],
       baseUrl: 'https://gymhealth.org',
       lazy: true,
