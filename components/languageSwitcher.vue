@@ -15,10 +15,6 @@
       <span class="name" :key="langnow.id">{{ langnow.name }}</span>
       <img class="arrow" src="~/static/assets/img/_src/icon/flags/arrow.svg">
     </div>
-    <br>
-    <br>
-    <nuxt-link :to="switchLocalePath('ru')">Русский</nuxt-link>
-    <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
 
   </div>
 </template>
@@ -33,6 +29,11 @@ export default {
       img: '/assets/img/_src/icon/flags/ru.svg',
     },
     languages: [
+      {
+        id: 'ru',
+        name: 'Русский',
+        img: '/assets/img/_src/icon/flags/ru.svg',
+      },
       {
         'id' : 'es',
         'name' : 'Español',
@@ -72,7 +73,6 @@ export default {
           // langnow.img = value.img;
         }
       });
-      return this.$i18n.locale = lang;
 
     }
   }

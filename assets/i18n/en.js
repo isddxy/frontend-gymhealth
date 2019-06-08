@@ -9,6 +9,8 @@ export default {
         password: 'Password',
         i_no_account: 'I have no account',
         full_name: 'Full name',
+        full_name_test: 'John Smith',
+        email_test: 'example@email.com',
         create_account: 'Create account',
         sign_in: 'Sign in',
         sign_up: 'Sign up',

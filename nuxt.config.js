@@ -63,7 +63,11 @@ export default {
     ['nuxt-i18n',{
       locales: [
         {code: "en", iso: 'en-US', file: "en.js"},
-        {code: "ru", iso: 'ru-RU', file: "ru.js"}
+        {code: "ru", iso: 'ru-RU', file: "ru.js"},
+        {code: "zh", iso: 'zh-CN', file: "zh.js"},
+        {code: "fr", iso: 'fr-FR', file: "fr.js"},
+        {code: "pt", iso: 'pt-PT', file: "pt.js"},
+        {code: "es", iso: 'es-ES', file: "es.js"},
       ],
       lazy: true,
       defaultLocale: "en",

@@ -5,17 +5,17 @@
         <form @submit.prevent="submit">
             <div class="form-group">
                 <label>{{ $t('auth.full_name') }}</label>
-                <input v-model.trim="form.name" type="text" class="form-control" placeholder="Имя Фамилия" autofocus>
+                <input v-model.trim="form.name" type="text" class="form-control" v-bind:placeholder="$t('auth.full_name_test')" autofocus>
                 <small class="form-text text-danger" v-if="errors.name">{{ errors.name[0] }}</small>
             </div>
             <div class="form-group">
                 <label>Email</label>
-                <input v-model.trim="form.email" type="email" class="form-control" placeholder="Email">
+                <input v-model.trim="form.email" type="email" class="form-control" v-bind:placeholder="$t('auth.email_test')">
                 <small class="form-text text-danger" v-if="errors.email">{{ errors.email[0] }}</small>
             </div>
             <div class="form-group">
                 <label>{{ $t('auth.password') }}</label>
-                <input v-model.trim="form.password" type="password" class="form-control" placeholder="Ваш пароль">
+                <input v-model.trim="form.password" type="password" class="form-control" v-bind:placeholder="$t('auth.password')">
                 <small class="form-text text-danger" v-if="errors.password">{{ errors.password[0] }}</small>
             </div>
             <button type="submit" class="btn btn-large btn-color-accent btn-start btn-response btn-submit">{{ $t('auth.create_account') }}т</button>

@@ -5,12 +5,12 @@
       <form @submit.prevent="submit">
         <div class="form-group">
           <label>{{ $t('auth.login_or_email') }}</label>
-          <input v-model.trim="form.email" type="email" class="form-control" placeholder="Email" autofocus>
+          <input v-model.trim="form.email" type="email" class="form-control" v-bind:placeholder="$t('auth.login_or_email')" autofocus>
           <small class="form-text text-danger" v-if="errors.email">{{ errors.email[0] }}</small>
         </div>
         <div class="form-group">
           <label>{{ $t('auth.password') }}</label>
-          <input v-model.trim="form.password" type="password" class="form-control" placeholder="Ваш пароль">
+          <input v-model.trim="form.password" type="password" class="form-control" v-bind:placeholder="$t('auth.password')">
           <small class="form-text text-danger" v-if="errors.password">{{ errors.password[0] }}</small>
         </div>
         <button type="submit" class="btn btn-large btn-color-accent btn-start btn-response btn-submit">{{ $t('auth.sign_in') }}</button>
