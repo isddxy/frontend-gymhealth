@@ -41,13 +41,14 @@
           </div>
 
         </div>
-
-
-      </div>
-
+        
       <div class="footer">
         <AppLangswitcher />
       </div>
+
+
+      </div>
+
 
 
     </div>
@@ -59,7 +60,6 @@ import AppHeader from '~/components/header/header.vue'
 import AppLangswitcher from '~/components/languageSwitcher.vue'
 
 export default {
-  i18n: false,
   layout: 'start',
   components: {
     AppHeader,
@@ -71,5 +71,9 @@ export default {
 }
 </script>
 
-<style>
+<style <style lang="sass">
+.footer
+  position: fixed
+  bottom: 0
+  right: 15%
 </style>
