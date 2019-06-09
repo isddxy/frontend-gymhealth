@@ -46,15 +46,9 @@ export default {
           data: this.form
         });
 
-        if (!this.$i18n.locale == 'en') {
-          this.$router.push({
-              path: this.$route.query.redirect || "/" + this.$i18n.locale + "/my"
-          });
-        } else {
-          this.$router.push({
-              path: this.$route.query.redirect || "/my"
-          });
-        }
+        this.$router.push({
+            path: this.$route.query.redirect || "ru/my"
+        })
 
       } catch (e) {
 
