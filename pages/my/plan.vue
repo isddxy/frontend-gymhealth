@@ -3,7 +3,7 @@
     <div class="content">
       <h1>{{ $t('sidebar.plan') }}</h1>
       <p>Пока пусто. Описание появится позже</p>
-        <full-calendar :event="events" />
+        <full-calendar/>
     </div>
   </div>
 </template>
