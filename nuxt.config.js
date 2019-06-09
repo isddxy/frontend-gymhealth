@@ -51,7 +51,8 @@ export default {
     '~/plugins/mixins/user.js',
     '~/plugins/mixins/validation.js',
     '~/plugins/axios.js',
-    '~plugins/i18n.js'
+    '~/plugins/i18n.js',
+    {src: '~/plugins/calendar.js', ssr: false}
   ],
 
   /*
@@ -134,8 +135,21 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    //vendor: ['vue-input-ui'],
+    //vendor: ['fullcalendar/vue'],
+    //vendor: ['jquery'],
     extend(config, ctx) {
     }
+
+    // extend(config, ctx) {
+    //   // Run ESLint on save
+    //   if (process.server && process.browser) {
+    //     config.module.rules.push({
+    //         enforce: 'pre',
+    //         test: /\.(js|vue)$/,
+    //         loader: 'eslint-loader',
+    //         exclude: /(node_modules)/
+    //     })
+    //   }
+    // }
   }
 }
