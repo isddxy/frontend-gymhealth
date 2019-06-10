@@ -1,9 +1,9 @@
 <template>
     <nav class="top-menu">
         <ul>
-            <li><a href="#">{{ $t('common.workouts') }}</a></li>
-            <li><a href="#">{{ $t('common.exercises') }}</a></li>
-            <li><nuxt-link :to="localePath('index')">{{ $t('common.trainers') }}</nuxt-link></li>
+            <li><nuxt-link :to="localePath('search-workout')">{{ $t('common.workouts') }}</nuxt-link></li>
+            <li><nuxt-link :to="localePath('search-exercise')">{{ $t('common.exercises') }}</nuxt-link></li>
+            <li><nuxt-link :to="localePath('search-trainer')">{{ $t('common.trainers') }}</nuxt-link></li>
             <template v-if="!authenticated">
                 <li><nuxt-link :to="localePath('start-about')" class="btn btn-top-menu">{{ $t('common.how_work') }}</nuxt-link></li>
             </template>
@@ -22,7 +22,7 @@ export default {
         ...mapGetters({
             loggedIn: "auth/authenticated"
         })
-    }    
+    }
 }
 </script>
 

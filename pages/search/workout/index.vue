@@ -2,10 +2,14 @@
   <div>
     <div class="content-dashboard">
       <h1>{{ $t('common.search') }} {{ $t('topNav.workouts') }}</h1>
+      <br>
+      <form>
+        <div class="form-group form-group-search">
+          <input  type="text" class="form-control" v-bind:placeholder="$t('common.search')" autofocus>
+          <small class="form-text text-danger"></small>
+        </div>
+      </form>
       <p>Пока пусто. Описание появится позже</p>
-      <h3>
-        Главная
-      </h3>
     </div>
   </div>
 </template>
@@ -19,5 +23,10 @@ export default {
 }
 </script>
 
-<style>
+<style <style lang="sass" scoped>
+form
+  width: 100%
+
+.form-group input
+  border: 1px solid gray !important
 </style>

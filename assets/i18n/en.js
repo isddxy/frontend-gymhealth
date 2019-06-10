@@ -36,6 +36,7 @@ export default {
       workouts: "Workouts",
       meals: "Meals",
       trainers: "Trainers",
-      muscles: "Muscles"
+      muscles: "Muscles",
+      exercises: "Exercises"
     }
 }

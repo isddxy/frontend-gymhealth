@@ -36,7 +36,8 @@ export default {
     workouts: "Тренировки",
     meals: "Питание",
     trainers: "Тренера",
-    muscles: "Мыщцы"
+    muscles: "Мыщцы",
+    exercises: "Упражнения"
   },
 }
 
