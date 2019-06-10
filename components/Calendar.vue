@@ -38,7 +38,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import momentPlugin from '@fullcalendar/moment'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import jaLocale from '@fullcalendar/core/locales/ru'
+import ruLocale from '@fullcalendar/core/locales/ru'
 import moment from 'moment'
 export default {
   components: {
@@ -53,7 +53,7 @@ export default {
   data() {
     return {
       calendarPlugins: [ dayGridPlugin, momentPlugin, timeGridPlugin, interactionPlugin ],
-      locale: jaLocale,
+      locale: ruLocale,
       events: this.event,
       header: {
         left: 'today prev,next',
@@ -69,10 +69,10 @@ export default {
       minTimes: '07:00',
       maxTimes: '19:00',
       buttonText: {
-        prev: '',
-        next: '',
-        prevYear: '',
-        nextYear: ''
+        prev: '<',
+        next: '>',
+        prevYear: '<',
+        nextYear: '>'
       }
     }
   },
