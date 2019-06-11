@@ -9,7 +9,13 @@
           <small class="form-text text-danger"></small>
         </div>
       </form>
-      <p>Пока пусто. Описание появится позже</p>
+      <div v-for="(muscle, index) in muscles" :key="index">
+        <h1>ID мыщцы: {{ muscle.id }} </h1>
+        <p>Картинка: {{ muscle.img }}</p>
+        <h3>ID категории: {{ muscle.muscle_group.id }} </h3>
+        <p>Картинка: {{ muscle.muscle_group.img }}</p>
+        
+      </div>
     </div>
   </div>
 </template>
@@ -19,7 +25,20 @@ export default {
   layout: 'dashboard',
   head: {
     title: 'Dashboard'
+  },
+  data() {
+    return {
+      muscles: []
+    }
+  },
+  async asyncData({$axios}) {
+    let {data} = await $axios.$get('/muscles')
+    //console.log(data)
+    return {
+      muscles: data
+    }
   }
+  
 }
 </script>
 
