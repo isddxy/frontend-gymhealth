@@ -52,6 +52,7 @@ export default {
     '~/plugins/mixins/validation.js',
     '~/plugins/axios.js',
     '~/plugins/i18n.js',
+    '~/plugins/auth-lang-redirect.js',
     {src: '~/plugins/calendar.js', ssr: false}
   ],
 
