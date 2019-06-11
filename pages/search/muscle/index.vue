@@ -55,10 +55,12 @@ form
   grid-template-columns: 1fr 1fr 1fr
   grid-gap: 2vw
 .search-card
-  background-color: rgba(243, 239, 248, 0.68)
+  background-color: rgba(243, 239, 248, 0.48)
   padding: 30px
   border-radius: 20px
   overflow: hidden
+  h2
+    line-height: 32px
   h3
     color: #76699D
   p
@@ -71,5 +73,5 @@ form
     height: auto
     border-radius: 10px
   &:hover
-    box-shadow: 0px 8px 55px rgba(59, 34, 91, 0.15)
+    box-shadow: 0px 8px 35px rgba(59, 34, 91, 0.15)
 </style>

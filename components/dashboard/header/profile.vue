@@ -1,7 +1,9 @@
 <template>
   <div>
             <template v-if="!authenticated">
-                <li><nuxt-link :to="localePath('start-sign-in')" class="btn btn-top-menu">{{ $t('auth.sign_in') }}</nuxt-link></li>
+              <div class="profile">
+                <nuxt-link :to="localePath('start-sign-in')" class="btn btn-top-menu">{{ $t('auth.sign_in') }}</nuxt-link>
+              </div>
             </template>
             <template v-if="authenticated">
                 <div class="profile">
