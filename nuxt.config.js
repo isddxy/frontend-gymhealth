@@ -124,7 +124,7 @@ export default {
       },
     },
     redirect: {
-      login: "/start/sign-in",
+      login: "/ru/start/sign-in",
       home: false
     },
   },
