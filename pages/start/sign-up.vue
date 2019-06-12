@@ -47,25 +47,25 @@ export default {
     methods: {
         async submit() {
 
-        try {
+            try {
 
-            await this.$axios.$post('register', this.form)
-            await this.$auth.loginWith('local', {
-                data: {
-                    email: this.form.email,
-                    password: this.form.password
-                }
-            })
+                await this.$axios.$post('register', this.form)
+                await this.$auth.loginWith('local', {
+                    data: {
+                        email: this.form.email,
+                        password: this.form.password
+                    }
+                })
 
-            this.$router.push({
-                path: this.$route.query.redirect || "/ru/my"
-            })
+                this.$router.push({
+                    path: this.$route.query.redirect || "/ru/my"
+                })
 
-        } catch (e) {
+            } catch (e) {
 
-            return true;
+                return true;
 
-        }
+            }
 
         },
     },

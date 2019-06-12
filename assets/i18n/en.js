@@ -49,5 +49,12 @@ export default {
       description2: "Even if you've already started your program, it's never too late to start measuring, because it's amazing and useful to see how your body continues to change.",
       creat_new_size: "Make a new measurement",
       write_last: "Record the last",
+    },
+    paga_workout: {
+      create_new: "Create a new workout",
+      name: "Name workout",
+      description: "Description workout",
+      img: "Photo URL workout",
+      create: "Add workout"
     }
 }
