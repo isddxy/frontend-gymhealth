@@ -3,7 +3,8 @@
         <ul>
             <li><nuxt-link :to="localePath('search-workout')">{{ $t('common.workouts') }}</nuxt-link></li>
             <li><nuxt-link :to="localePath('search-exercise')">{{ $t('common.exercises') }}</nuxt-link></li>
-            <li><nuxt-link :to="localePath('search-trainer')">{{ $t('common.trainers') }}</nuxt-link></li>
+            <!-- <li><nuxt-link :to="localePath('search-trainer')">{{ $t('common.trainers') }}</nuxt-link></li> -->
+            <li><nuxt-link :to="localePath('search-muscle')">{{ $t('topNav.muscles') }}</nuxt-link></li>
             <template v-if="!authenticated">
                 <li><nuxt-link :to="localePath('start-about')" class="btn btn-top-menu">{{ $t('common.how_work') }}</nuxt-link></li>
             </template>

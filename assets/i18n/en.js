@@ -40,7 +40,8 @@ export default {
       meals: "Meals",
       trainers: "Trainers",
       muscles: "Muscles",
-      exercises: "Exercises"
+      exercises: "Exercises",
+      muscle_group: "Muscle group"
     },
     page_body_size: {
       title_h2: "Why measure the body?",

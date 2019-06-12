@@ -40,7 +40,8 @@ export default {
     meals: "Питание",
     trainers: "Тренера",
     muscles: "Мышцы",
-    exercises: "Упражнения"
+    exercises: "Упражнения",
+    muscle_group: "Группы мышц"
   },
   page_body_size: {
     title_h2: "Для чего измерять тело?",
