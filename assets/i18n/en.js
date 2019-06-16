@@ -26,6 +26,7 @@ export default {
         how_work: 'How it works?',
         search: "Search",
         profile: "Profile",
+        more: "View more",
     },
     sidebar: {
       dashboard: "Dashboard",

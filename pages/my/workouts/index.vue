@@ -15,7 +15,7 @@
 
           <div class="card" v-bind:style="{ 'background': 'linear-gradient(180deg, rgba(155, 155, 155, 0) 3.36%, rgba(60, 60, 60, 0.8) 81.59%), url(' + workout.img + ')'}">
             <h2>{{ workout.name }}</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-more btn-color-gradient-gray" href="#">{{ $t('common.more') }}</a>
             <a class="btn btn-card-edit btn-color-yellow" href="#">
               <img src="~/static/assets/img/_src/icon/gear.svg">
             </a>

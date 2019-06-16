@@ -26,6 +26,7 @@ export default {
       how_work: "Как это работает?",
       search: "Поиск",
       profile: "Профиль",
+      more: "Подробнее",
   },
   sidebar: {
     dashboard: "Панель управления",
