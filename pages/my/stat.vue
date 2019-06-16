@@ -11,9 +11,9 @@
 export default {
   layout: 'dashboard',
   middleware: ['auth'],
-  head: {
-    title: 'Прогресс'
-  }
+  head() {
+    return { title: this.$t('sidebar.stat') }
+  },
 }
 </script>
 

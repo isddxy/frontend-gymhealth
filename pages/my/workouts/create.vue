@@ -27,6 +27,9 @@
   export default {
     layout: 'dashboard',
     middleware: ['auth'],
+    head() {
+      return { title: this.$t('paga_workout.create_new') }
+    },
     data() {
       return {
         form: {
@@ -38,7 +41,7 @@
     },
     methods: {
       async create() {
-      
+
         try {
 
           await this.$axios.$post('/workout', this.form)

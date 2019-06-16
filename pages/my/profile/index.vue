@@ -15,8 +15,8 @@
 
 export default {
     layout: 'dashboard',
-    head: {
-        title: 'Профиль'
+    head() {
+      return { title: this.$t('common.profile') + ' - ' + this.user.name }
     },
     middleware: ['auth'],
     methods: {

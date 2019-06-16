@@ -11,9 +11,9 @@
 export default {
   layout: 'dashboard',
   middleware: ['auth'],
-  head: {
-    title: 'Приёмы пищи'
-  }
+  head() {
+    return { title: this.$t('sidebar.meal') }
+  },
 }
 </script>
 

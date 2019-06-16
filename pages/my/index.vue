@@ -14,9 +14,9 @@
 export default {
   layout: 'dashboard',
   middleware: ['auth'],
-  head: {
-    title: 'Dashboard'
-  }
+  head() {
+    return { title: this.$t('sidebar.dashboard') }
+  },
 }
 </script>
 

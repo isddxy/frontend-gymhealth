@@ -22,5 +22,9 @@ export default {
         exercises: "练习",
         trainers: "教练",
         how_work: "它是如何工作的",
+        muscles: "肌肉",
+    },
+    topNav: {
+      muscles: "肌肉",
     }
 }

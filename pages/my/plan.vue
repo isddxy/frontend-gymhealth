@@ -16,6 +16,7 @@ export default {
   middleware: ['auth'],
   head() {
     return {
+      title: this.$t('sidebar.plan'),
       link: [
         { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css' },
         { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.css' },
