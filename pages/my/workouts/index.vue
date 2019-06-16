@@ -41,7 +41,7 @@ export default {
     }
   },
   mounted() {
-    this.$axios.$get('/user/1/workouts').then(response => {
+    this.$axios.$get('/user/'+ this.user.id +'/workouts').then(response => {
       this.workouts = response.data
     })
   }
