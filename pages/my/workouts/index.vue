@@ -25,6 +25,9 @@
           <div class="card">
             <h2>Групповые занятия на рельефные ноги</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-edit btn-color-yellow" href="#">
+              <img src="~/static/assets/img/_src/icon/gear.svg">
+            </a>
           </div>
         </a>
 
@@ -37,6 +40,9 @@
           <div class="card">
             <h2>Заголовок тренировки</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-edit btn-color-yellow" href="#">
+              <img src="~/static/assets/img/_src/icon/gear.svg">
+            </a>
           </div>
         </a>
 
@@ -44,6 +50,9 @@
           <div class="card">
             <h2>Заголовок тренировки</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-edit btn-color-yellow" href="#">
+              <img src="~/static/assets/img/_src/icon/gear.svg">
+            </a>
           </div>
         </a>
 
@@ -51,6 +60,9 @@
           <div class="card">
             <h2>Заголовок тренировки</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-edit btn-color-yellow" href="#">
+              <img src="~/static/assets/img/_src/icon/gear.svg">
+            </a>
           </div>
         </a>
 
@@ -58,6 +70,9 @@
           <div class="card">
             <h2>Заголовок тренировки</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-edit btn-color-yellow" href="#">
+              <img src="~/static/assets/img/_src/icon/gear.svg">
+            </a>
           </div>
         </a>
 
@@ -65,6 +80,9 @@
           <div class="card">
             <h2>Заголовок тренировки</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-edit btn-color-yellow" href="#">
+              <img src="~/static/assets/img/_src/icon/gear.svg">
+            </a>
           </div>
         </a>
 
@@ -72,6 +90,9 @@
           <div class="card">
             <h2>Заголовок тренировки</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
+            <a class="btn btn-card-edit btn-color-yellow" href="#">
+              <img src="~/static/assets/img/_src/icon/gear.svg">
+            </a>
           </div>
         </a>
 
@@ -147,7 +168,7 @@ export default {
         border-radius: 99px
         right: 1em
         margin: 1.15em 2em
-        padding: 0.9em 1.02em 0.5em 1.1em
+        padding: 0.9em 1.02em 0.5em 1.02em
         img
           height: 1.625em
 
