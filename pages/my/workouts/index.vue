@@ -11,84 +11,10 @@
 
       <div class="workout-cards">
 
-        <a href="#">
-          <div class="card">
-            <h2>Золотая тройка паурлифтинга</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
+        <a href="#" v-for="(workout, index) in workouts" :key="index">
 
-        <a href="#">
-          <div class="card">
-            <h2>Групповые занятия на рельефные ноги</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="card">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="card">
-            <h2>Заголовок тренировки</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="card">
-            <h2>Заголовок тренировки</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="card">
-            <h2>Заголовок тренировки</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="card">
-            <h2>Заголовок тренировки</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="card">
-            <h2>Заголовок тренировки</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="card">
-            <h2>Заголовок тренировки</h2>
+          <div class="card" v-bind:style="{ 'background': 'linear-gradient(180deg, rgba(155, 155, 155, 0) 3.36%, rgba(60, 60, 60, 0.8) 81.59%), url(' + workout.img + ')'}">
+            <h2>{{ workout.name }}</h2>
             <a class="btn btn-card-more btn-color-gradient-gray" href="#">Подробнее</a>
             <a class="btn btn-card-edit btn-color-yellow" href="#">
               <img src="~/static/assets/img/_src/icon/gear.svg">
@@ -107,8 +33,18 @@ export default {
   layout: 'dashboard',
   middleware: ['auth'],
   head() {
-      return { title: this.$t('sidebar.workouts') }
+      return { title: this.$t('sidebar.workouts') + this.user.id }
   },
+  data() {
+    return {
+      workouts: [],
+    }
+  },
+  mounted() {
+    this.$axios.$get('/user/1/workouts').then(response => {
+      this.workouts = response.data
+    })
+  }
 }
 </script>
 
@@ -123,7 +59,7 @@ export default {
     border-radius: 20px
     height: 14.2em
     background: linear-gradient(180deg, rgba(155, 155, 155, 0) 3.36%, rgba(60, 60, 60, 0.8) 81.59%), url(https://cdn.diabetesdaily.com/wp-content/blogs.dir/21/files/2018/05/victor-freitas-546968-unsplash.jpg);
-    background-size: cover
+    background-size: cover !important
     opacity: 0.9
     color: #fff
     position: relative
