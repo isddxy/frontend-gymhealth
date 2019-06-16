@@ -44,7 +44,7 @@
 
         try {
 
-          await this.$axios.$post('/workout', this.form)
+          await this.$axios.$post('/workout/create', this.form)
           return this.$router.push('/my/workouts')
 
         } catch (e) {

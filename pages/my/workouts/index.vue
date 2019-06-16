@@ -147,7 +147,7 @@ export default {
       line-height: 1.2em
       position: absolute
       bottom: 0
-      padding: 1.15em 2.3em
+      padding: 1.15em 2.1em
       -webkit-transition: bottom .2s ease-in-out
       -moz-transition: bottom .2s ease-in-out
       -o-transition: bottom .2s ease-in-out
