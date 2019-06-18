@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="content-dashboard">
-      <h1>{{ $t('common.search') }} - {{ $t('topNav.muscles') }}</h1>
+      <h1>{{ $t('search.muscle.title') }}</h1>
       <br>
       <form>
         <div class="form-group form-group-search">
-          <input  type="text" class="form-control" v-bind:placeholder="$t('common.search')" autofocus>
+          <input  type="text" class="form-control" v-bind:placeholder="$t('search.muscle.placeholder')" autofocus>
           <small class="form-text text-danger"></small>
         </div>
       </form>
@@ -24,8 +24,8 @@
 <script>
 export default {
   layout: 'dashboard',
-  head: {
-    title: 'Dashboard'
+  head() {
+      return { title: this.$t('search.muscle.title') }
   },
   data() {
     return {
@@ -33,7 +33,7 @@ export default {
     }
   },
   async asyncData({$axios}) {
-    let {data} = await $axios.$get('/muscles')
+    let {data} = await $axios.$get('/search/muscles')
     //console.log(data)
     return {
       muscles: data
@@ -43,7 +43,7 @@ export default {
 }
 </script>
 
-<style <style lang="sass" scoped>
+<style lang="sass">
 form
   width: 100%
 

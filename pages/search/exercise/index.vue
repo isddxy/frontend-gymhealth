@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="content-dashboard">
-      <h1>{{ $t('common.search') }} {{ $t('topNav.exercises') }}</h1>
+      <h1>{{ $t('search.exercise.title') }}</h1>
       <br>
       <form>
         <div class="form-group form-group-search">
-          <input  type="text" class="form-control" v-bind:placeholder="$t('common.search')" autofocus>
+          <input  type="text" class="form-control" v-bind:placeholder="$t('search.exercise.placeholder')" autofocus>
           <small class="form-text text-danger"></small>
         </div>
       </form>

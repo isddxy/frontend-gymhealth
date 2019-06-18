@@ -1,25 +1,49 @@
 <template>
-  <div>
     <div class="content-dashboard">
-      <h1>{{ $t('common.search') }} {{ $t('topNav.workouts') }}</h1>
       <br>
+      <h1>{{ $t('search.workout.title') }}</h1>
       <form>
         <div class="form-group form-group-search">
-          <input  type="text" class="form-control" v-bind:placeholder="$t('common.search')" autofocus>
+          <input  type="text" class="form-control" v-bind:placeholder="$t('search.workout.placeholder')" autofocus>
           <small class="form-text text-danger"></small>
         </div>
       </form>
-      <p>Пока пусто. Описание появится позже</p>
-    </div>
+      <br>
+      <h3>{{ $t('search.workout.last_added') }}</h3>
+      <hr>
+      <div class="workout-cards">
+
+        <a href="#" v-for="(workout, index) in workouts" :key="index">
+
+          <div class="card" v-bind:style="{ 'background': 'linear-gradient(180deg, rgba(155, 155, 155, 0) 3.36%, rgba(60, 60, 60, 0.8) 81.59%), url(' + workout.img + ')'}">
+            <h2>{{ workout.name }}</h2>
+            <a class="btn btn-card-more btn-color-gradient-gray" href="#">{{ $t('search.workout.btn_view_more') }}</a>
+          </div>
+        </a>
+
+      </div>
+
   </div>
 </template>
 
 <script>
 export default {
   layout: 'dashboard',
-  head: {
-    title: 'Dashboard'
+  head() {
+      return { title: this.$t('search.workout.title') }
+  },
+  data() {
+    return {
+      workouts: []
+    }
+  },
+  async asyncData({$axios}) {
+    let {data} = await $axios.$get('/search/workouts')
+    return {
+      workouts: data
+    }
   }
+  
 }
 </script>
 

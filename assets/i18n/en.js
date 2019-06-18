@@ -44,6 +44,28 @@ export default {
       exercises: "Exercises",
       muscle_group: "Muscle group"
     },
+    search: {
+      workout:{
+        title: "Workouts search",
+        placeholder: "Enter the name of the workout",
+        btn_view_more: "View more",
+        last_added: "Last added",
+      },
+      muscle:{
+        title: "Muscles seacrh",
+        placeholder: "Enter the name of the muscle",
+      },
+      muscle_group:{
+        title: "Muscle group",
+      }
+    },
+    my: {
+      workout: {
+        title: "My workouts",
+        create_workout: "Create workout",
+        search_workout: "Workout search",
+      }
+    },
     page_body_size: {
       title_h2: "Why measure the body?",
       description1: "Take measurements every two weeks and record them — so you can track your progress. This is a great motivator! Of course, at first you may not like it, but as soon as you start to see the results, you get an incredible sense of achievement.",

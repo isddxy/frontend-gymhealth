@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content-dashboard">
-      <h1>{{ $t('topNav.muscle_group') }}</h1>
+      <h1>{{ $t('search.muscle_group.title') }}</h1>
       <div class="content-search list">
         <div v-for="(muscle, index) in muscle_group" :key="index" class="search-card">
           <img :src="muscle.img"/>
@@ -15,8 +15,8 @@
 <script>
 export default {
   layout: 'dashboard',
-  head: {
-    title: 'Dashboard'
+  head() {
+      return { title: this.$t('search.muscle_group.title') }
   },
   data() {
     return {
@@ -24,7 +24,7 @@ export default {
     }
   },
   async asyncData({$axios}) {
-    let {data} = await $axios.$get('/muscle-group')
+    let {data} = await $axios.$get('/search/muscle-group')
     return {
       muscle_group: data
     }
