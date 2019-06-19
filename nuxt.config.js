@@ -92,6 +92,8 @@ export default {
         // Cookie name
         cookieKey: 'i18n_redirected'
       },
+      redirectCookieKey: 'redirected',
+      useRedirectCookie: true
     }]
   ],
 

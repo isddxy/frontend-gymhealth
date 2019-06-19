@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="content-dashboard">
     <h1>{{ $t('my.workout.update.title') }}</h1>
     <form @submit.prevent="update">
       <div class="form-group">

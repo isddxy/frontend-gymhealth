@@ -48,6 +48,7 @@ export default {
 </script>
 
 
-<style lang="sass">
-
+<style lang="sass" scoped>
+.footer
+  margin-top: 200px
 </style>

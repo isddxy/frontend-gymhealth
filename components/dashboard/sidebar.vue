@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <nuxt-link :to="localePath('my')" class="logo">
+    <nuxt-link :to="localePath('my-workout')" class="logo">
       <img class="icon" src="~/static/assets/img/_src/logo.svg">
       <img class="name" src="~/static/assets/img/_src/GymHealth.svg">
     </nuxt-link>

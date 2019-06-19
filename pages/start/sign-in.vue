@@ -47,7 +47,7 @@ export default {
         });
 
         this.$router.push({
-            path: this.$route.query.redirect || "/ru/my"
+            path: this.localePath(this.$route.query.redirect || "/my")
           })
 
       } catch (e) {
