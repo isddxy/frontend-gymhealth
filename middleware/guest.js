@@ -3,6 +3,6 @@ export default function({ app, store, redirect }) {
         // if (app.i18n.locale == 'en') app.i18n.locale ='/'
         // return redirect('/' + app.i18n.locale + '/my');
 
-        return redirect('/ru/my/workouts/create');
+        return redirect(localePath('my-workouts'));
     }
 }

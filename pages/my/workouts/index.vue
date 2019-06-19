@@ -13,16 +13,17 @@
 
       <div class="workout-cards">
 
-        <a href="#" v-for="(workout, index) in workouts" :key="index">
+        <div v-for="(workout, index) in workouts" :key="index">
+          <nuxt-link :to="localePath({ name: 'my-workouts-id', params: {id: workout.id} })">
+            <div class="card" v-bind:style="{ 'background': 'linear-gradient(180deg, rgba(155, 155, 155, 0) 3.36%, rgba(60, 60, 60, 0.8) 81.59%), url(' + workout.img + ')'}">
+              <h2>{{ workout.name }}</h2>
+              <a class="btn btn-card-more btn-color-gradient-gray" href="#">{{ $t('common.more') }}</a>
 
-          <div class="card" v-bind:style="{ 'background': 'linear-gradient(180deg, rgba(155, 155, 155, 0) 3.36%, rgba(60, 60, 60, 0.8) 81.59%), url(' + workout.img + ')'}">
-            <h2>{{ workout.name }}</h2>
-            <a class="btn btn-card-more btn-color-gradient-gray" href="#">{{ $t('common.more') }}</a>
-            <a class="btn btn-card-edit btn-color-yellow" href="#">
-              <img src="~/static/assets/img/_src/icon/gear.svg">
-            </a>
-          </div>
-        </a>
+              <nuxt-link :to="localePath({ name: 'my-workouts-id-edit', params: {id: workout.id}})" class="btn btn-card-edit btn-color-yellow"><img src="~/static/assets/img/_src/icon/gear.svg"></nuxt-link>
+
+            </div>
+          </nuxt-link>
+        </div>
 
       </div>
 

@@ -64,6 +64,19 @@ export default {
         title: "My workouts",
         create_workout: "Create workout",
         search_workout: "Workout search",
+        btn_update: "Update",
+        btn_delete: "Destroy",
+        create: {
+          title: "Create new workout",
+          submit_btn_name: "Create",
+          name: "Name workout",
+          description: "Description workout",
+          img: "Photo URL workout",
+        },
+        update: {
+          title: "Update",
+          submit_btn_name: "Update",
+        }
       }
     },
     page_body_size: {
@@ -73,11 +86,4 @@ export default {
       creat_new_size: "Make a new measurement",
       write_last: "Record the last",
     },
-    paga_workout: {
-      create_new: "Create a new workout",
-      name: "Name workout",
-      description: "Description workout",
-      img: "Photo URL workout",
-      create: "Add workout"
-    }
 }
