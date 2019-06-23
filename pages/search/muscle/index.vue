@@ -2,7 +2,8 @@
   <div>
     <div class="content-dashboard">
       <h1>{{ $t('search.muscle.title') }}</h1>
-      <br>
+      <nuxt-link :to="localePath('search-muscle-group')" class="btn btn-top-menu">{{ $t('topNav.muscle_group') }}</nuxt-link>
+      <br><br><br>
       <form>
         <div class="form-group form-group-search">
           <input  type="text" class="form-control" v-bind:placeholder="$t('search.muscle.placeholder')" autofocus>

@@ -22,7 +22,7 @@
             <nuxt-link :to="localePath('start-sign-in')" class="btn btn-large btn-color-empty-border-gray">{{ $t('auth.sign_in') }}</nuxt-link>
           </div>
 
-          <!-- <div class="btns-auth-soc">
+          <div class="btns-auth-soc">
             <div class="title">{{ $t('auth.login_with') }}</div>
             <ul>
               <li>
@@ -38,7 +38,7 @@
                 <a href="#" class="btn-soc btn-soc-twitter"><img src="~/static/assets/img/_src/icon/soc/twitter.svg"></a>
               </li>
             </ul>
-          </div> -->
+          </div>
 
         </div>
 
