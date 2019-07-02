@@ -77,13 +77,40 @@ export default {
           title: "Update",
           submit_btn_name: "Update",
         }
+      },
+      body: {
+        index: {
+          title_h2: "Why measure the body?",
+          description1: "Take measurements every two weeks and record them — so you can track your progress. This is a great motivator! Of course, at first you may not like it, but as soon as you start to see the results, you get an incredible sense of achievement.",
+          description2: "Even if you've already started your program, it's never too late to start measuring, because it's amazing and useful to see how your body continues to change.",
+          creat_new_size: "Make a new measurement",
+          write_last: "Record the last",
+        },
+        add: {
+          neck: "Neck",
+          chest: "Chest",
+          under_chest: "Грудная клетка",
+          shoulders: "Плечевой пояс",
+          arm_left: "Правый бицепс",
+          arm_right: "Левый бицепс",
+          forearm_left: "Левое предплечье",
+          forearm_right: "Правое предплечье",
+          wrist: "Запястье",
+          waist: "Талия",
+          belly: "Живот",
+          hip: "Бёдра",
+          hip_left: "Левое бедро",
+          hip_right: "Правое бедро",
+          shin_left: "Левая голень",
+          shin_right: "Правая голень",
+          ankle: "Лодыжка",
+          photo_front: "Фото спереди",
+          photo_back: "Фото сзади",
+          photo_left: "Фото слева",
+          photo_right: "Фото справа",
+          submit_btn_name: "Добавить замеры",
+        }
       }
-    },
-    page_body_size: {
-      title_h2: "Why measure the body?",
-      description1: "Take measurements every two weeks and record them — so you can track your progress. This is a great motivator! Of course, at first you may not like it, but as soon as you start to see the results, you get an incredible sense of achievement.",
-      description2: "Even if you've already started your program, it's never too late to start measuring, because it's amazing and useful to see how your body continues to change.",
-      creat_new_size: "Make a new measurement",
-      write_last: "Record the last",
+  
     },
 }

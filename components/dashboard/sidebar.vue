@@ -23,7 +23,7 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="localePath('my-body-size')" class="text-muted">
+            <nuxt-link :to="localePath('my-body')" class="text-muted">
               <span class="icon">
                 <img src="~/static/assets/img/_src/icon/biceps.svg">
               </span>
