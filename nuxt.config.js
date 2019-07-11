@@ -33,8 +33,8 @@ export default {
   ** Global CSS
   */
   css: [
-    "@/assets/theme/main/style/sass/main.sass",
-    "@/assets/theme/main/style/scss/app.scss"
+    "@/assets/theme/main/style/sass/main2.sass",
+    //"@/assets/theme/main/style/scss/app.scss"
   ],
 
 

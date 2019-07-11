@@ -1,0 +1,443 @@
+// Fonts
+@import fonts
+
+// Variables
+@import vars
+
+// Badges
+@import badges
+
+// Buttons
+@import btn
+
+body
+  margin: 0
+  padding: 0
+  font-family: "ProximaNova", serif
+  font-size: $font_size_fhd
+  line-height: $line-height-base
+  color: #444
+
+.grid-wrapper
+  display: grid
+  max-width: 80.421em
+  margin: 0 auto
+  grid-template-columns: 12.895em 1fr 1fr
+
+  // 245px 1fr 1fr;
+  grid-gap: 3.158em
+
+  // 60px
+  grid-template-areas: "sidebar header header" "sidebar content content" "sidebar  footer  footer"
+
+.sidebar
+  grid-area: sidebar
+  position: fixed
+  margin-top: 4.211em
+
+  //outline: 1px solid red;
+  a.logo
+    text-decoration: none
+
+    &:hover
+      .icon
+        -webkit-transform: scale(1.2)
+        transform: scale(1.2)
+
+    .icon
+      top: 4
+      margin: 0 0.421em 0 0.632em
+      width: 2.105em
+      height: 1.684em
+      transition: transform .3s linear
+
+    .name
+      width: 9.105em
+
+  ul.menu
+    margin-top: 3.158em
+
+    //60px
+    padding: 0
+
+    li
+      list-style: none
+      padding: 0
+      margin-bottom: 0.737em
+
+      //14px
+      a
+        &:hover
+          background-color: #d8f1ff
+          color: $sidebar-menu-text-hover
+
+          .notification
+            -webkit-transform: scale(0)
+            transform: scale(0)
+            opacity: 0
+
+        &.nuxt-link-active
+          background-color: $sidebar-menu-bg-active
+
+          &:hover
+            background-color: #d8f1ff
+            color: $sidebar-menu-text-hover
+
+        width: 12.895em
+
+        // 245px
+        height: 3.211em
+
+        // 61px
+        border-radius: 99px
+        color: #7ca0b9
+        display: block
+        text-decoration: none
+        grid-template-columns: 3.684em 1fr
+
+        // 70px
+        display: grid
+
+        span.icon
+          width: 1.632em
+
+          // 31px
+          height: 1.632em
+
+          // 31px
+          margin-left: 0.368em
+
+          // 7px
+          align-self: center
+          justify-self: center
+          position: relative
+
+          img
+            width: 100%
+
+            // 31px
+            height: 100%
+
+            // 31px
+
+          .notification
+            position: absolute
+            top: -0.632em
+
+            // -12px
+            right: 1.053em
+
+            // 20px
+            transition: .4s linear
+
+            .badge-icon
+              font-size: 0.789em
+
+              //15
+              border-radius: 99px
+              background: $gradient-blue
+
+        span.name
+          font-size: 1.053em
+
+          //20
+          font-weight: normal
+          font-style: normal
+          font-stretch: normal
+          line-height: normal
+          letter-spacing: 0.032em
+
+          //0.6px
+          align-self: center
+          justify-self: left
+
+.wrapper-header
+  margin-top: 3.684em
+
+  // 70px
+  grid-area: header
+  display: grid
+  grid-template-columns: auto 15.368em
+
+  // 292px
+  grid-template-areas: "top-menu profile"
+
+  //outline: 1px solid #528cb3;
+  height: 2.526em
+
+  // 48px;
+  ul.top-menu
+    //outline: 1px solid #7E738B;
+    grid-area: 'top-menu'
+    padding: 0
+    margin: 0
+    height: 100%
+    width: 100%
+    display: grid
+    list-style: none
+    grid-template-columns: repeat(4, auto)
+    grid-gap: 4.211em
+
+    //80px;
+    align-items: center
+    justify-content: center
+
+    //outline: 1px solid red;
+    li
+      //outline: 1px solid #528cb3;
+      justify-content: left
+      height: 100%
+      display: grid
+      justify-items: center
+
+      a
+        font-size: $profile-menu-text
+
+        //font-size: 22px;
+        text-decoration: none
+        align-self: center
+        justify-self: center
+
+        //outline: 1px solid blue;
+        line-height: 1.211em
+
+        // 23px;
+        display: block
+        color: $top-menu-text
+
+        &:hover
+          color: darken($color: $top-menu-text, $amount: 20%)
+
+  .login
+    height: 100%
+
+    //outline: 1px solid red;
+    display: grid
+    justify-content: right
+    align-items: center
+    position: relative
+
+    .btn-start
+      position: absolute
+      right: 0
+      top: -0.526em
+
+      //-10px;
+      font-style: normal
+      font-weight: 600
+      font-size: 0.842em
+
+      // 16px;
+      padding: 1.158em 2em
+
+      // 22px 38px;
+      //padding: 12px 38px;
+      border-radius: 99px
+      text-align: center
+      letter-spacing: 0.06em
+      text-transform: uppercase
+      background: $signin-bg
+      text-decoration: none
+      color: #fff
+
+      //outline: 1px solid green;
+
+  .profile
+    grid-area: 'profile'
+    text-align: right
+
+    //outline: 1px solid green;
+    &-user
+      text-decoration: none
+
+      //outline: 1px solid red;
+      height: 100%
+      display: grid
+      grid-template-areas: "name photo"
+      grid-template-columns: 1fr auto
+      justify-items: right
+      align-items: center
+      grid-gap: 1.053em
+
+      // 20px;
+      &:hover
+        img.userphoto
+          // -webkit-transform: scale(1.1);
+          // transform: scale(1.1);
+          border: 4px solid rgba(102, 137, 161, 0.08)
+
+      &-name
+        font-size: $profile-user-name
+
+        //font-size: 20px;
+        color: #8CA1C1
+        grid-area: 'name'
+        line-height: 1.053em
+
+        //20px;
+        //outline: 1px solid black;
+
+      &-photo
+        grid-area: 'photo'
+        display: grid
+        align-items: none
+        position: relative
+
+        img.userphoto
+          border: 4px solid rgba(60, 64, 67, 0)
+          border-radius: 99px
+          height: 2.105em
+
+          // 40px;
+          width: 2.105em
+
+          // 40px;
+          transition: transform .3s linear
+
+        .role
+          position: absolute
+          width: 0.737em
+
+          // 14px;
+          bottom: -0.632em
+
+          // -12px;
+          right: -0.632em
+
+          // -12px;
+          &-left
+            right: 0
+            bottom: -0.632em
+
+            // -12px;
+            left: -0.632em
+
+            // -12px;
+
+.content
+  grid-area: content
+
+.footer
+  grid-area: footer
+  position: relative
+
+  .lang
+    margin: 40px 0
+    font-size: 14px
+    display: grid
+    position: absolute
+    bottom: 0
+    right: 0
+    grid-template-areas: "select-lang" "active"
+    grid-template-columns: 1fr
+
+    //outline: 1px solid red;
+    cursor: pointer
+
+    .flag
+      grid-area: 'flag'
+      width: 20px
+      height: 14px
+
+      &-active
+        opacity: 0
+        transition: opacity .5s linear
+
+    .select-lang
+      grid-area: 'select-lang'
+      border-radius: 10px 10px 0 0
+      opacity: 0
+      transition: opacity .5s linear
+      margin: 0
+      padding: 0
+
+      .language
+        list-style: none
+        display: grid
+        grid-template-areas: "flag name"
+        grid-template-columns: 40px 1fr
+        height: 34px
+        opacity: 0
+
+        @for $i from 1 through 5
+          &:nth-child(#{$i}n)
+            transition: opacity #{($i - 1) / 10}s linear
+
+        .flag
+          align-self: center
+          justify-self: center
+          grid-area: 'flag'
+
+        span.name
+          align-self: center
+          justify-self: left
+          grid-area: 'name'
+          opacity: 0.8
+
+        &:first-child:hover
+          border-radius: 10px 10px 0 0
+
+        &:hover
+          background-color: rgba(28, 28, 28, 0.04)
+
+          span.name
+            opacity: 0.9
+
+      &:hover ~ .active .arrow
+        transform: rotate(180deg)
+        transition: transform .25s linear
+
+    .active
+      z-index: 2
+      grid-area: 'active'
+      display: grid
+      height: 34px
+      grid-template-areas: "flag name arrow"
+      grid-template-columns: 40px 1fr 33px
+      border-radius: 0 0 10px 10px
+      transition: background-color .3s linear
+      justify-items: center
+      align-items: center
+
+      span.name
+        grid-area: 'name'
+        opacity: 0.8
+
+      .arrow
+        grid-area: 'arrow'
+        opacity: 0.5
+        transition: transform .35s linear
+
+    &:hover
+      .select-lang
+        height: auto
+        display: grid
+        opacity: 1
+        background-color: rgba(28, 28, 28, 0.025)
+
+        .language
+          opacity: 1
+
+        @for $i from 5 through 1
+          .language:nth-child(#{$i})
+            transition: opacity #{0 + (6 - $i) / 10}s linear
+
+      .active
+        background-color: rgba(28, 28, 28, 0.05)
+
+        .flag-active
+          opacity: 1
+          transition: opacity .25s linear
+
+        .arrow
+          transform: rotate(90deg)
+          transition: transform .15s linear
+
+.mt-0
+  margin-top: 0
+
+.footer
+  margin-top: 65px
+
+// Media Sizes
+@import media
