@@ -5,11 +5,8 @@
       <br>
       <nuxt-link class="btn btn-large btn-color-accent btn-start" :to="localePath('my-workouts-create')">{{  $t('my.workout.create_workout') }}</nuxt-link>
       <nuxt-link class="btn btn-large btn-color-empty-border-gray" :to="localePath('search-workout')">{{ $t('my.workout.search_workout') }}</nuxt-link>
-      
-      <br><br>
-      <p>
-        Не нужно дожидаться прихода в зал, чтобы решить, чем вы будете заниматься сегодня, какие мышцы и каким образом тренировать. На это расходуется масса времени. Идите в зал с четким планом тренировки, из которого вы точно будете знать, что вам нужно нагружать сегодня.
-      </p>
+
+      <br><br><br><br>
 
       <div class="workout-cards">
 

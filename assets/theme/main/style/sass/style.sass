@@ -1,14 +1,26 @@
+// animation pages or elements
+@import page-anim
+
 // Fonts
 @import fonts
 
 // Variables
 @import vars
 
+// Text format - h1,h2,h3,h4 p strong hr ...
+@import text-format
+
 // Badges
 @import badges
 
 // Buttons
 @import btn
+
+html
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  font-weight: 400
 
 body
   margin: 0
@@ -17,6 +29,7 @@ body
   font-size: $font_size_fhd
   line-height: $line-height-base
   color: #444
+  font-weight: lighter !important
 
 .grid-wrapper
   display: grid
@@ -320,10 +333,11 @@ body
 .footer
   grid-area: footer
   position: relative
+  align-self: end
 
   .lang
-    margin: 40px 0
-    font-size: 14px
+    margin: 2.5em 0
+    font-size: 0.875em
     display: grid
     position: absolute
     bottom: 0
@@ -439,5 +453,9 @@ body
 .footer
   margin-top: 65px
 
+// Inputs and Forms
+@import inputs
+
 // Media Sizes
 @import media
+

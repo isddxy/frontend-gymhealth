@@ -13,8 +13,7 @@
     max-width: 1200px
     padding: 0 16px
 
-  .sidebar
-    margin-left: 16px
+
 
 // Минус с топа отступ
 
@@ -40,7 +39,7 @@
       justify-content: left
 
   .sidebar
-    margin-left: 20px
+    margin-left: 0px !important
 
     .logo
       .name
@@ -68,3 +67,31 @@
     .wrapper-header
       ul.top-menu
         display: none
+
+  // MOBILE
+  @media all and (max-width: 660px)
+    .grid-wrapper
+      grid-template-columns: 1fr
+      grid-template-areas: "header" "content" "footer" "sidebar"
+
+    .sidebar
+      margin-top: 0
+      width: 100%
+      z-index: 99
+      background: #fff
+      bottom: 0
+      left: 0
+      .logo
+        display: none
+      ul.menu
+        margin: 0
+        li
+          display: inline-block
+          width: 19%
+          margin: 0
+          a
+            border-radius: 0
+            span.icon
+              .notification
+                top: -1.632em
+                right: -1.353em
