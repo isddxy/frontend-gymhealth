@@ -27,7 +27,8 @@
     "nuxt-compress": "^1.0.2",
     "nuxt-i18n": "^5.12.4",
     "vue-full-calendar": "^2.7.0",
-    "vue-input-ui": "^0.2.7"
+    "vue-input-ui": "^0.2.7",
+    "vue-videobg": "^2.0.0"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",

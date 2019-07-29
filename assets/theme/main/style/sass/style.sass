@@ -33,15 +33,61 @@ body
 
 .grid-wrapper
   display: grid
-  max-width: 80.421em
+  max-width: 80em //1367px
   margin: 0 auto
   grid-template-columns: 12.895em 1fr 1fr
 
   // 245px 1fr 1fr;
-  grid-gap: 3.158em
+  grid-gap: 3em // 153px
 
   // 60px
   grid-template-areas: "sidebar header header" "sidebar content content" "sidebar  footer  footer"
+.grid-wrapper-accent
+  grid-template-areas: "header"
+  grid-template-columns: 1fr
+  max-width: 64em //1367px
+  grid-gap: 6em // 153px
+  .welcome-info
+    width: 52%
+    h1
+      font-size: 3em // 54px
+      line-height: 1.1em
+      color: #3A4355
+      margin-bottom: 0.7em // 40px
+    p
+      font-size: 1.2em // 22px
+      line-height: 1.34em
+      color: #3a4355
+    .btns-form
+      display: grid
+      grid-template-areas: "reg login"
+      grid-template-columns: 353px 1fr
+      margin: 70px 0 50px 0
+      grid-column-gap: 30px
+      .btn-start
+        grid-area: reg
+        white-space: nowrap
+      .btn-response
+        grid-area: login
+        justify-self: stretch
+    .btns-auth-soc
+      width: 100%
+      .title
+        text-align: center
+        font-size: 0.941em
+        padding-bottom: 1.176em
+        letter-spacing: 0.02em
+        color: #2F4774
+      ul
+        margin: 0
+        padding: 0
+        display: grid
+        list-style: none
+        grid-template-columns: repeat(4, auto)
+        grid-gap: 30px
+        align-items: center
+        justify-content: center
+
 
 .sidebar
   grid-area: sidebar
@@ -329,6 +375,7 @@ body
 
 .content
   grid-area: content
+  width: 100%
 
 .footer
   grid-area: footer
@@ -452,6 +499,49 @@ body
 
 .footer
   margin-top: 65px
+
+.responsive
+  width: 100%
+
+
+// MAIN PAGE
+
+.content-right
+  grid-area: content
+  margin-top: 150px
+  max-width: 600px
+  h1
+    margin-bottom: 53px
+  p
+    color: rgba(131, 126, 151, 0.83);
+  .btns-form
+    display: grid
+    grid-template-areas: "reg login"
+    grid-template-columns: 333px 1fr
+    margin: 70px 0 50px 0
+    grid-column-gap: 30px
+    .btn-start
+      grid-area: reg
+    .btn-response
+      grid-area: login
+      justify-self: stretch
+  .btns-auth-soc
+    width: 100%
+    .title
+      text-align: center
+      font-size: 18px
+      padding: 20px
+      letter-spacing: 0.02em
+      color: rgba(92, 128, 162, 0.4)
+    ul
+      margin: 0
+      padding: 0
+      display: grid
+      list-style: none
+      grid-template-columns: repeat(4, auto)
+      grid-gap: 30px
+      align-items: center
+      justify-content: center
 
 // Inputs and Forms
 @import inputs

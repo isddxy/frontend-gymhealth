@@ -35,7 +35,7 @@ export default {
         display: grid
         list-style: none
         grid-template-columns: repeat(4, auto)
-        grid-gap: 90px
+        grid-gap: 5em //90px
         align-items: center
         justify-content: right
         li
@@ -45,8 +45,8 @@ export default {
             justify-items: center
             a
                 text-decoration: none
-                color: #7E738B
-                font-size: 22px
+                color: #3A4355
+                font-size: 1.222em //22px
                 text-decoration: none
                 align-self: center
                 justify-self: center

@@ -20,9 +20,9 @@ export default {
 
 <style lang="sass" scoped>
 header
-    display: grid
-    grid-template-columns: 224px 1fr
-    grid-area: header
-    padding-top: 80px
-    align-items: center
+  display: grid
+  grid-template-columns: 240px 1fr
+  grid-area: header
+  margin-top: 2.7em //80px
+  align-items: center
 </style>

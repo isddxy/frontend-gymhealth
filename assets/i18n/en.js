@@ -1,6 +1,6 @@
 export default {
     welcome: {
-        main_title: 'Reach your goals right now',
+        main_title: 'Reach your goals and desires now',
         main_text: 'A platform that allows you to plan and control the training process, monitor progress, as well as sleep and meals.'
     },
     auth: {
@@ -111,6 +111,6 @@ export default {
           submit_btn_name: "Добавить замеры",
         }
       }
-  
+
     },
 }

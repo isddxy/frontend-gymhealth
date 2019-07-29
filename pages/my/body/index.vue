@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content">
-      <img src="~/static/assets/img/_src/man-height.png" style="float:left">
+      <img src="~/static/assets/img/_src/man-height.png" class="responsive">
       <h1>{{ $t('sidebar.body_size') }}</h1>
       <h2>{{ $t('page_body_size.title_h2')}}?</h2>
       <p>{{ $t('page_body_size.description1')}}</p>

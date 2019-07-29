@@ -1,6 +1,41 @@
 button
     width: 100%
 
+
+// +++ SCSS
+
+.btn
+  border-radius: 99px
+  font-size: 0.789em
+
+  // 15px;
+  letter-spacing: 0.074em
+
+  //1.4px
+  text-decoration: none
+  text-transform: uppercase
+  padding: 1.100em 2.300em
+
+  // 19px 40px;
+  &-color
+    &-red
+      color: #fff
+      background: $gradient-red
+
+      &:hover
+        box-shadow: 0 6px 25px 0 rgba(235, 127, 127, 0.28)
+        background: $gradient-red-hover
+
+    &-white-blue
+      color: #bdd5e5
+      background: #f3faff
+
+      &:hover
+        color: darken(#bdd5e5, 14%)
+        background: darken(#f3faff, 4%)
+
+
+
 .btn
     border-radius: 99px
     text-transform: uppercase
@@ -11,20 +46,18 @@ button
     cursor: pointer
     outline: none
     border: none
-    &-submit
-        margin-top: 30px
     &-response
         display: block
     &-top-menu
-        background: rgba(235,239,255,0.45)
-        padding: 20px 31px
-        font-size: 16px !important
-        color: rgba(92,128,161,0.45) !important
+        background: rgba(255,255,255,0.6)
+        padding: 1.176em 1.824em // 20px 31px
+        font-size: 0.889em !important
+        color: #475267 !important
         &:hover
-            background: rgba(224, 228, 242, 0.45)
+            background: rgba(255, 255, 255, 1)
     &-large
-        font-size: 22px
-        padding: 22px 43px
+        font-size: 1.194em // 22px
+        padding: 1.1em 1.6em // 22px 43px
         text-align: center
 
 
@@ -32,30 +65,37 @@ button
         &-empty
             background: none
             &-border
-                border: 2px
+                border: 0.118em // 2px
                 &-gray
-                    color: rgba(118, 94, 132, 0.75)
-                    border: solid rgba(137, 95, 163, 0.1)
+                    // color: rgba(118, 94, 132, 0.75)
+                    // border: solid rgba(137, 95, 163, 0.1)
+                    color: rgba(255, 255, 255, 1)
+                    border: solid rgba(255, 255, 255, 0.7)
                     &:hover
-                        background: rgba(137, 95, 163, 0.05)
+                        background: rgba(255, 255, 255, 0.7)
                         border: solid rgba(137, 95, 163, 0.05)
+                        color: #000
         &-accent
-            padding: 24px 43px
-            color: #fff
-            background: #F35E94
-            box-shadow: 0px 6px 25px rgba(243, 94, 148, 0.25)
-            &:hover
-                background: #FF72A5
+          color: #fff
+          background: #F35E94
+          box-shadow: 0px 0.353em 1.471em  rgba(243, 94, 148, 0.25) // 0px 6px 25px
+          &:hover
+              background: #FF72A5
+        &-darkblue
+          color: #fff
+          background: rgba(47, 71, 116, 0.6)
+          &:hover
+            background: rgba(47, 71, 116, 0.85)
         &-yellow
           background: #FFEE97
           color: #9F9353
-          box-shadow: 0px 10px 25px rgba(255, 234, 125, 0.25)
+          box-shadow: 0px 0.588em 1.471em rgba(255, 234, 125, 0.25) //0px 10px 25px
           &:hover
             background: #FFE897
         &-gradient
           &-gray
             background: linear-gradient(103.5deg, #D4E8FD -23.66%, #EFE5FC 123.75%), #A7E5FF
-            box-shadow: 0px 6px 25px rgba(139, 210, 241, 0.25)
+            box-shadow: 0px 0.353em 1.471em rgba(139, 210, 241, 0.25) // 0px 6px 25px
             color: #6C7080
             text-decoration: none
 
@@ -94,38 +134,3 @@ button
         background: #1DA1F2
         &:hover
             box-shadow: 0px 4px 10px rgba(74, 118, 168, 0.26)
-
-
-// +++ SCSS
-
-
-
-.btn
-  border-radius: 99px
-  font-size: 0.789em
-
-  // 15px;
-  letter-spacing: 0.074em
-
-  //1.4px
-  text-decoration: none
-  text-transform: uppercase
-  padding: 1.100em 2.300em
-
-  // 19px 40px;
-  &-color
-    &-red
-      color: #fff
-      background: $gradient-red
-
-      &:hover
-        box-shadow: 0 6px 25px 0 rgba(235, 127, 127, 0.28)
-        background: $gradient-red-hover
-
-    &-white-blue
-      color: #bdd5e5
-      background: #f3faff
-
-      &:hover
-        color: darken(#bdd5e5, 14%)
-        background: darken(#f3faff, 4%)

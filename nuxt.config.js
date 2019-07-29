@@ -52,7 +52,8 @@ export default {
     '~/plugins/axios.js',
     '~/plugins/i18n.js',
     '~/plugins/auth-lang-redirect.js',
-    {src: '~/plugins/calendar.js', ssr: false}
+    //'~/plugins/video-bg.js',
+    {src: '~/plugins/calendar.js', ssr: false},
   ],
 
   /*
@@ -134,11 +135,14 @@ export default {
   ** Build configuration
   */
   build: {
+    cache: true,
+
+    // transpile: ['vue-videobg'],
     /*
     ** You can extend webpack config here
     */
     //vendor: ['fullcalendar/vue'],
-    //vendor: ['jquery'],
+    //vendor: ['vue-videobg'],
     extend(config, ctx) {
     }
 

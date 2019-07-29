@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="content-full">
+    <div class="welcome-info">
       <h1>{{ $t('auth.sign_in') }}</h1>
       <form @submit.prevent="submit">
         <div class="form-group">
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  layout: 'start-main',
+  layout: 'start',
   middleware: ['guest'],
   data () {
     return {
